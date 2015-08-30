@@ -10,7 +10,7 @@
 #define AdventureClub_Bridging_Header_h
 
 
-#endif /* AdventureClub_Bridging_Header_h */
+
 // Parse API
 #import <Parse/Parse.h>
 #import <ParseUI/ParseUI.h>
@@ -21,4 +21,6 @@
 // Facebook API
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+#endif /* AdventureClub_Bridging_Header_h */
 

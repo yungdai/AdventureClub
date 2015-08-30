@@ -16,16 +16,16 @@ class BuddiesTableViewController: UITableViewController {
         super.viewDidLoad()
 
         // set up the refresh controls for this table
-        var refreshControl = UIRefreshControl()
+        let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: Selector("sortArray"), forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = refreshControl
 
-        var query = PFUser.query()
+        let query = PFUser.query()
         query?.whereKey("username", notEqualTo: PFUser.currentUser()!.username!)
-        var users = query?.findObjects()
+        let users = query?.findObjects()
         if let buddies = users {
             for user in users! {
-                println(user["name"] as! String)
+                print(user["name"] as! String)
                 userArray.append(user["name"] as! String)
                 tableView.reloadData()
             }
@@ -34,7 +34,7 @@ class BuddiesTableViewController: UITableViewController {
     }
     
     func sortArray() {
-        let sortedAlphabetically = Array(userArray.reverse())
+        let sortedAlphabetically = Array(Array(userArray.reverse()))
         for(index,element) in sortedAlphabetically.enumerate() {
             userArray[index] = element
         }

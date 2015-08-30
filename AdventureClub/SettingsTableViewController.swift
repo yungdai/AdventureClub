@@ -78,7 +78,7 @@ class SettingsTableViewController: UITableViewController, UIImagePickerControlle
                 } else if let userPicture = user["userImage"] as? PFFile {
                     userPicture.getDataInBackgroundWithBlock({ (data, error: NSError?) -> Void in
                         if (error != nil) {
-                            println(error)
+                            print(error)
                             // TODO throw error message
                             return
                         }
@@ -105,15 +105,15 @@ class SettingsTableViewController: UITableViewController, UIImagePickerControlle
             user["email"] = emailAddressTextField.text
             
             // get the image file name
-            user["userImage"] = PFFile(name:"image.jpg" , data: UIImageJPEGRepresentation(userImageView.image, 0.5))
+            user["userImage"] = PFFile(name:"image.jpg" , data: UIImageJPEGRepresentation(userImageView.image!, 0.5)!)
             
             user.saveInBackgroundWithBlock({ (sucess, error: NSError?) -> Void in
                 if (error != nil) {
-                    println(error)
+                    print(error)
                     
                 } else {
                     // TODO: give response for saved data
-                    println("saved")
+                    print("saved")
                     
                 }
             })

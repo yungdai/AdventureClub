@@ -35,7 +35,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         
         query!.findObjectsInBackgroundWithBlock { (results, error) -> Void in
             self.data = (results as? [PFObject])!
-            print("found something")
+            print("found something", terminator: "")
             // if you find the data the reload the screen
             self.tableView.reloadData()
         }

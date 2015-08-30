@@ -2,12 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdventureClub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="AdventureClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,17 +17,178 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aBo-2k-RRw">
+                                <rect key="frame" x="8" y="134" width="584" height="271"/>
+                                <subviews>
+                                    <view alpha="0.75" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-mH-Oce" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="52"/>
+                                        <subviews>
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="Vbe-61-Z8e">
+                                                <rect key="frame" x="8" y="9" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Vbe-61-Z8e" secondAttribute="height" multiplier="1:1" id="2xm-gl-P9u"/>
+                                                    <constraint firstAttribute="height" constant="35" id="OsG-Vg-WWg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWI-zy-Iya">
+                                                <rect key="frame" x="51" y="9" width="531" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QWI-zy-Iya" secondAttribute="trailing" constant="2" id="M2w-KY-qyf"/>
+                                            <constraint firstItem="QWI-zy-Iya" firstAttribute="centerY" secondItem="Vbe-61-Z8e" secondAttribute="centerY" id="TFI-wM-rza"/>
+                                            <constraint firstItem="Vbe-61-Z8e" firstAttribute="bottom" secondItem="QWI-zy-Iya" secondAttribute="bottom" id="Tr7-yR-aOe"/>
+                                            <constraint firstItem="QWI-zy-Iya" firstAttribute="bottom" secondItem="vjL-mH-Oce" secondAttribute="bottomMargin" id="aMK-b8-OAG"/>
+                                            <constraint firstItem="Vbe-61-Z8e" firstAttribute="centerY" secondItem="vjL-mH-Oce" secondAttribute="centerY" id="b8p-85-bVk"/>
+                                            <constraint firstItem="Vbe-61-Z8e" firstAttribute="leading" secondItem="vjL-mH-Oce" secondAttribute="leadingMargin" id="flb-iD-foA"/>
+                                            <constraint firstItem="Vbe-61-Z8e" firstAttribute="top" secondItem="QWI-zy-Iya" secondAttribute="top" id="qCb-fu-BUr"/>
+                                            <constraint firstItem="QWI-zy-Iya" firstAttribute="leading" secondItem="Vbe-61-Z8e" secondAttribute="trailing" constant="8" symbolic="YES" id="sv5-Lw-3wu"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                <color key="value" red="0.82745098039215681" green="0.72941176470588232" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                <color key="value" red="0.19215686274509802" green="0.38823529411764707" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3a-vA-mFu" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="584" height="52"/>
+                                        <subviews>
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_lock" translatesAutoresizingMaskIntoConstraints="NO" id="AUR-iz-CnQ">
+                                                <rect key="frame" x="8" y="8" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="AUR-iz-CnQ" secondAttribute="height" multiplier="1:1" id="Fg4-Qj-miV"/>
+                                                    <constraint firstAttribute="height" constant="35" id="ZgO-8d-iuL"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCL-sR-cg6">
+                                                <rect key="frame" x="51" y="8" width="525" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iCL-sR-cg6" secondAttribute="trailing" constant="2" id="9Uq-Am-w2T"/>
+                                            <constraint firstItem="iCL-sR-cg6" firstAttribute="trailing" secondItem="V3a-vA-mFu" secondAttribute="trailingMargin" id="CQU-NR-4B3"/>
+                                            <constraint firstItem="iCL-sR-cg6" firstAttribute="centerY" secondItem="V3a-vA-mFu" secondAttribute="centerY" id="Qkk-9C-Vno"/>
+                                            <constraint firstItem="iCL-sR-cg6" firstAttribute="leading" secondItem="AUR-iz-CnQ" secondAttribute="trailing" constant="8" id="bPX-0G-WHh"/>
+                                            <constraint firstItem="iCL-sR-cg6" firstAttribute="bottom" secondItem="AUR-iz-CnQ" secondAttribute="bottom" id="dnw-2S-5MD"/>
+                                            <constraint firstItem="AUR-iz-CnQ" firstAttribute="centerY" secondItem="iCL-sR-cg6" secondAttribute="centerY" id="i6s-Vr-eUD"/>
+                                            <constraint firstItem="AUR-iz-CnQ" firstAttribute="top" secondItem="V3a-vA-mFu" secondAttribute="topMargin" id="kg7-xN-tDt"/>
+                                            <constraint firstItem="AUR-iz-CnQ" firstAttribute="leading" secondItem="V3a-vA-mFu" secondAttribute="leading" constant="8" id="pTJ-Yg-QCj"/>
+                                            <constraint firstItem="iCL-sR-cg6" firstAttribute="top" secondItem="AUR-iz-CnQ" secondAttribute="top" id="sZ6-Kv-fL8"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                <color key="value" red="0.82716632088486675" green="0.72803585338978993" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                <color key="value" red="0.19087809667648425" green="0.38666583035394475" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHd-k0-tfT" customClass="ButtonStyle" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="584" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRounding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="BorderColour">
+                                                <color key="value" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bCn-0U-5rg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tU-CO-bar">
+                                        <rect key="frame" x="0.0" y="158" width="584" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZY-bb-Umx" customClass="ButtonStyle" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="187" width="584" height="30"/>
+                                        <state key="normal" title="Sign Up"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="BorderColour">
+                                                <color key="value" red="0.20054433351078124" green="0.11917227558215057" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRounding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yf-u3-Gno"/>
+                                            <segue destination="NYw-7o-2mA" kind="presentation" identifier="signUp" id="Qza-DK-YQb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-UU-BBg">
+                                        <rect key="frame" x="0.0" y="225" width="584" height="46"/>
+                                        <state key="normal" image="facebook"/>
+                                        <connections>
+                                            <action selector="facebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Viu-Sj-HfU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhb-wy-iAY">
+                                <rect key="frame" x="8" y="28" width="584" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DkL-Vq-m3E"/>
+                                    <constraint firstAttribute="width" constant="584" id="T7E-se-w9K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94151189874713248" blue="0.95073578640363676" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jhb-wy-iAY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8kR-QU-BtP"/>
+                            <constraint firstItem="jhb-wy-iAY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OXN-Gu-CRS"/>
+                            <constraint firstItem="aBo-2k-RRw" firstAttribute="leadingMargin" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-12" id="UGM-5t-JF9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aBo-2k-RRw" secondAttribute="trailing" constant="-12" id="o8j-tS-heb"/>
+                            <constraint firstItem="aBo-2k-RRw" firstAttribute="top" secondItem="jhb-wy-iAY" secondAttribute="bottom" constant="85" id="zUt-Ja-bDG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="errorMessage" destination="jhb-wy-iAY" id="yDD-69-k3r"/>
+                        <outlet property="loginButton" destination="UHd-k0-tfT" id="dmX-bW-5tz"/>
+                        <outlet property="passwordField" destination="iCL-sR-cg6" id="Yrb-pS-eoC"/>
+                        <outlet property="signupButton" destination="lZY-bb-Umx" id="hkF-hk-8sB"/>
+                        <outlet property="usernameField" destination="QWI-zy-Iya" id="xkT-Xv-tbZ"/>
+                        <segue destination="et5-8q-WfA" kind="presentation" identifier="mainApp" id="H8X-V0-6ef"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-818" y="-1429"/>
+            <point key="canvasLocation" x="-801" y="-1427"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="ynz-Vx-Lmh">
             <objects>
-                <viewController id="g3s-db-nLo" sceneMemberID="viewController">
+                <viewController id="g3s-db-nLo" customClass="SignUpViewController" customModule="AdventureClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TqA-2n-11p"/>
                         <viewControllerLayoutGuide type="bottom" id="Ucb-do-sWc"/>
@@ -33,13 +196,230 @@
                     <view key="view" contentMode="scaleToFill" id="zJZ-td-gEq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-iy-vZE">
+                                <rect key="frame" x="20" y="136" width="560" height="340"/>
+                                <subviews>
+                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28i-2U-NPT" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hc-Iw-8lx">
+                                                <rect key="frame" x="8" y="11" width="544" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
+                                                <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                <color key="value" red="0.82716632089999997" green="0.72803585339999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                <color key="value" red="0.19215686274509802" green="0.38823529411764707" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-vx-dsw">
+                                        <rect key="frame" x="0.0" y="62" width="560" height="52"/>
+                                        <subviews>
+                                            <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-br-Bd7" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="52"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fw-aF-019">
+                                                        <rect key="frame" x="8" y="11" width="262" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
+                                                        <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                        <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                        <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-Oi-41n" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
+                                                <rect key="frame" x="285" y="0.0" width="275" height="52"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-TK-p5h">
+                                                        <rect key="frame" x="8" y="11" width="261" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
+                                                        <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                        <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                        <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-PM-qk4" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="124" width="560" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2j-U8-Lec">
+                                                <rect key="frame" x="8" y="11" width="544" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
+                                                <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-NF-czA" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="186" width="560" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXX-Wz-3hJ">
+                                                <rect key="frame" x="8" y="11" width="544" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
+                                                <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8x-uj-vpU" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="248" width="560" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password Confirmation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XZ-CA-Gxi">
+                                                <rect key="frame" x="8" y="11" width="544" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
+                                                <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppt-ru-BNf" customClass="ButtonStyle" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="310" width="560" height="30"/>
+                                        <state key="normal" title="Create Account"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRounding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="BorderColour">
+                                                <color key="value" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="createAccountButtonPressed:" destination="g3s-db-nLo" eventType="touchUpInside" id="kPJ-o0-HGP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignUp!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iK2-Dw-2LR">
+                                <rect key="frame" x="20" y="72" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Cbh-if-PWN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="jas-xg-6LS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94151189869999996" blue="0.9507357864" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="gcE-iy-vZE" secondAttribute="leading" id="1Cm-2Q-3GM"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TqA-2n-11p" secondAttribute="bottom" constant="5" id="G0d-0R-ziT"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="trailing" secondItem="gcE-iy-vZE" secondAttribute="trailing" id="LJa-7m-IoS"/>
+                            <constraint firstItem="gcE-iy-vZE" firstAttribute="centerX" secondItem="zJZ-td-gEq" secondAttribute="centerX" id="Xt9-UC-Rql"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="leading" secondItem="gcE-iy-vZE" secondAttribute="leading" id="eVr-G6-2TN"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="top" secondItem="TqA-2n-11p" secondAttribute="bottom" constant="8" symbolic="YES" id="sza-MB-gSy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gcE-iy-vZE" secondAttribute="trailing" id="tHs-lB-ETr"/>
+                            <constraint firstItem="gcE-iy-vZE" firstAttribute="top" secondItem="iK2-Dw-2LR" secondAttribute="bottom" constant="43" id="vbi-8C-ZbU"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vTk-XF-ndH"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vTk-XF-ndH">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="etm-gT-IOJ">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="g3s-db-nLo" id="hHi-P5-X3s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emailAddressField" destination="o2j-U8-Lec" id="dyN-CH-szW"/>
+                        <outlet property="errorMessageLabel" destination="iK2-Dw-2LR" id="n0p-fX-of9"/>
+                        <outlet property="firstNameField" destination="3fw-aF-019" id="XTZ-vA-4kv"/>
+                        <outlet property="lastNameField" destination="1Bv-TK-p5h" id="dDR-1X-ke4"/>
+                        <outlet property="passwordConfirmationField" destination="4XZ-CA-Gxi" id="c1J-is-AQY"/>
+                        <outlet property="passwordField" destination="wXX-Wz-3hJ" id="1Zi-HC-zrp"/>
+                        <outlet property="usernameField" destination="9Hc-Iw-8lx" id="BoM-z4-ZcI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EC1-aW-8cY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="681" y="-1432"/>
+            <point key="canvasLocation" x="827" y="-1427"/>
         </scene>
         <!--Activities Table View Controller-->
         <scene sceneID="zfP-1W-IT4">
@@ -76,7 +456,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hm5-br-iu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3067" y="-1080"/>
+            <point key="canvasLocation" x="3411" y="-1427"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qho-xQ-Bz2">
@@ -95,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCe-w2-8O3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4583" y="-1080"/>
+            <point key="canvasLocation" x="4927" y="-1427"/>
         </scene>
         <!--Adventures-->
         <scene sceneID="Yns-Ka-gBQ">
@@ -114,7 +494,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjq-FI-8yC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2255" y="-1759"/>
+            <point key="canvasLocation" x="2599" y="-2127"/>
         </scene>
         <!--AdventureClub Bar Controller-->
         <scene sceneID="gez-Jl-on9">
@@ -136,25 +516,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K3a-01-OMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1435" y="-1427"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="enF-DF-SDo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Kq-6n-6Rl" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yrq-8d-lfX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="g3s-db-nLo" kind="relationship" relationship="rootViewController" id="p25-Qd-AhZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BiI-rW-xg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-131" y="-1432"/>
+            <point key="canvasLocation" x="1655" y="-1427"/>
         </scene>
         <!--Activities-->
         <scene sceneID="MOC-Yp-Nly">
@@ -173,7 +535,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23U-1L-6pG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2255" y="-1080"/>
+            <point key="canvasLocation" x="2599" y="-1427"/>
         </scene>
         <!--Matches-->
         <scene sceneID="w72-G4-oyp">
@@ -198,11 +560,11 @@
                             <outlet property="delegate" destination="XpL-o7-sYb" id="Ny0-86-rp0"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="sXe-RD-x8D"/>
+                    <tabBarItem key="tabBarItem" title="Matches" image="Matches" id="sXe-RD-x8D"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPu-BG-RaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2255" y="-407"/>
+            <point key="canvasLocation" x="2599" y="-739"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="oQ0-P3-vO6">
@@ -227,11 +589,11 @@
                             <outlet property="delegate" destination="9Fb-7a-0Zj" id="nEI-Cc-uyu"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="35l-6B-vqS"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="35l-6B-vqS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7l-p1-vbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2255" y="262"/>
+            <point key="canvasLocation" x="2599" y="-54"/>
         </scene>
         <!--Search-->
         <scene sceneID="pe9-Z1-kSd">
@@ -256,11 +618,11 @@
                             <outlet property="delegate" destination="GYU-hD-mPq" id="VkU-SW-jn0"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="ZTQ-U6-r3s"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="ZTQ-U6-r3s"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83O-Uo-qih" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2255" y="955"/>
+            <point key="canvasLocation" x="2599" y="647"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Y6M-3Z-T8l">
@@ -275,11 +637,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Pjc-qa-UgT"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings icon" id="Pjc-qa-UgT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLd-UH-Dbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2255" y="1629"/>
+            <point key="canvasLocation" x="2611" y="1341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5ci-gT-KhN">
@@ -297,11 +659,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMS-1n-i5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3771" y="-1080"/>
+            <point key="canvasLocation" x="4115" y="-1427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qMf-Q5-NQH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NYw-7o-2mA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TXv-lv-tzP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g3s-db-nLo" kind="relationship" relationship="rootViewController" id="Iyy-HZ-l4Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhU-bz-kcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="-1427"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Matches" width="37" height="37"/>
         <image name="activities Icon" width="23" height="25"/>
         <image name="buddies" width="35" height="35"/>
+        <image name="facebook" width="202" height="46"/>
+        <image name="icon_lock" width="12" height="17"/>
+        <image name="icon_user" width="16" height="16"/>
+        <image name="settings icon" width="35" height="35"/>
     </resources>
 </document>

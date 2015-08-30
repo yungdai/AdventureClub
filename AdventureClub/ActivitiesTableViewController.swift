@@ -24,11 +24,11 @@ class ActivitiesTableViewController: UITableViewController {
         super.viewDidLoad()
         
         // setup the refresh controls for this table
-        var refreshControl = UIRefreshControl()
+        let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: ("refreshPage"), forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = refreshControl
         
-        var query = PFQuery(className: "Activity")
+        let query = PFQuery(className: "Activity")
         query.whereKey("creator", equalTo: PFUser.currentUser()!.username!)
         
         // getting the data asynchronously in the background
@@ -45,11 +45,11 @@ class ActivitiesTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         // setup the refresh controls for this table
-        var refreshControl = UIRefreshControl()
+        let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: ("refreshPage"), forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = refreshControl
         
-        var query = PFQuery(className: "Activity")
+        let query = PFQuery(className: "Activity")
         query.whereKey("creator", equalTo: PFUser.currentUser()!.username!)
         
         // getting the data asynchronously in the background
@@ -63,17 +63,17 @@ class ActivitiesTableViewController: UITableViewController {
     }
     
     func refreshPage() {
-        var query = PFQuery(className: "Activity")
+        let query = PFQuery(className: "Activity")
         query.whereKey("creator", equalTo: PFUser.currentUser()!)
         
         // getting the data asynchronously in the background
         query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
             if let activities = result as? [PFObject] {
                 self.activities = activities
-                println("found something")
+                print("found something", terminator: "")
             }
         }
-        print("got more data")
+        print("got more data", terminator: "")
         tableView.reloadData()
         refreshControl?.endRefreshing()
 
@@ -98,7 +98,7 @@ class ActivitiesTableViewController: UITableViewController {
     }
 
     func cellStyleFactory (indexPath: NSIndexPath) -> UITableViewCell {
-        var cellType = "ActivityCell"
+        let cellType = "ActivityCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellType, forIndexPath: indexPath) 
         
         // make sure that when you select the cell it doesn't have a style
@@ -133,7 +133,7 @@ class ActivitiesTableViewController: UITableViewController {
                     }
                     
                     if let newData = data{
-                        println("imagehere")
+                        print("imagehere", terminator: "")
                         activityCell.activityImage.image = UIImage(data: newData)
                     }
                 }
@@ -147,9 +147,9 @@ class ActivitiesTableViewController: UITableViewController {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             activities.removeAtIndex(indexPath.row).deleteInBackgroundWithBlock({ (success, error: NSError?) -> Void in
                 if (error != nil) {
-                    println(error)
+                    print(error, terminator: "")
                 } else {
-                    println("Activity Deleted!")
+                    print("Activity Deleted!", terminator: "")
                 }
             })
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)

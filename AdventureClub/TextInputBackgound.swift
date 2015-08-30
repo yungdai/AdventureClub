@@ -1,22 +1,17 @@
 //
-//  BackgroundView.swift
-//  BuddyUp
+//  TextInputBackgound.swift
+//  AdventureClub
 //
-//  Created by Yung Dai on 2015-06-25.
-//  Copyright (c) 2015 Yung Dai. All rights reserved.
+//  Created by Yung Dai on 2015-08-30.
+//  Copyright © 2015 Yung Dai. All rights reserved.
 //
 
 import UIKit
 
-@IBDesignable class BackgroundView: UIView {
-
+@IBDesignable class TextInputBackgound: UIView {
     // MARK: Inspectable properties ******************************
     
-    @IBInspectable var viewColour: UIColor = UIColor.grayColor() {
-        didSet {
-            backgroundColor = viewColour
-        }
-    }
+
     
     @IBInspectable var gradientStartColor: UIColor = UIColor.whiteColor() {
         didSet{
@@ -81,13 +76,5 @@ import UIKit
         super.init(coder: aDecoder)!
         setupView()
     }
-    
-    
-    func viewStyle() {
-    backgroundColor = viewColour
-        
-    }
-
-
 
 }

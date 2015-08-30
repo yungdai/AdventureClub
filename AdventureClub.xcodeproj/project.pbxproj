@@ -29,7 +29,6 @@
 		1A0BD6201B925D4300B61C07 /* DatePickerPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6171B925D4300B61C07 /* DatePickerPopUp.swift */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6211B925D4300B61C07 /* DatePickerPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD6181B925D4300B61C07 /* DatePickerPopUp.xib */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6221B925D4300B61C07 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6191B925D4300B61C07 /* DatePickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1A0BD6231B925D4300B61C07 /* Friendship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD61A1B925D4300B61C07 /* Friendship.swift */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6241B925D4300B61C07 /* ImageAsyncFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD61B1B925D4300B61C07 /* ImageAsyncFromURL.swift */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6341B925D5500B61C07 /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6251B925D5500B61C07 /* LabelStyle.swift */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6351B925D5500B61C07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6261B925D5500B61C07 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -45,7 +44,6 @@
 		1A0BD63F1B925D5500B61C07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6301B925D5500B61C07 /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6401B925D5500B61C07 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6311B925D5500B61C07 /* SplashScreen.swift */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6411B925D5500B61C07 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6321B925D5500B61C07 /* TextFieldStyle.swift */; settings = {ASSET_TAGS = (); }; };
-		1A0BD6421B925D5500B61C07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6331B925D5500B61C07 /* User.swift */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6521B92665500B61C07 /* DatePickerPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD6511B92665500B61C07 /* DatePickerPopUp.xib */; settings = {ASSET_TAGS = (); }; };
 		1A0BD6541B92666700B61C07 /* PickerViewPickerPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD6531B92666700B61C07 /* PickerViewPickerPopUp.xib */; settings = {ASSET_TAGS = (); }; };
 		1A0BD65C1B926A0200B61C07 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6571B926A0200B61C07 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
@@ -60,8 +58,9 @@
 		1A0BD66A1B926A6000B61C07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */; };
 		1A0BD66E1B926A8300B61C07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */; };
 		1A0BD6701B926A9000B61C07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */; };
-		1A0BD6731B926AD900B61C07 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6711B926AD900B61C07 /* libstdc++.6.dylib */; settings = {ASSET_TAGS = (); }; };
-		1A0BD6741B926AD900B61C07 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6721B926AD900B61C07 /* libsqlite3.dylib */; settings = {ASSET_TAGS = (); }; };
+		1A352CCD1B938711001A2573 /* TextInputBackgound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352CCC1B938711001A2573 /* TextInputBackgound.swift */; settings = {ASSET_TAGS = (); }; };
+		1A5709461B929D6E00755EDF /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5709451B929D6E00755EDF /* libstdc++.6.tbd */; };
+		1A5709481B929D8500755EDF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5709471B929D8500755EDF /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +109,6 @@
 		1A0BD6171B925D4300B61C07 /* DatePickerPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerPopUp.swift; sourceTree = "<group>"; };
 		1A0BD6181B925D4300B61C07 /* DatePickerPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerPopUp.xib; sourceTree = "<group>"; };
 		1A0BD6191B925D4300B61C07 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		1A0BD61A1B925D4300B61C07 /* Friendship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friendship.swift; sourceTree = "<group>"; };
 		1A0BD61B1B925D4300B61C07 /* ImageAsyncFromURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsyncFromURL.swift; sourceTree = "<group>"; };
 		1A0BD6251B925D5500B61C07 /* LabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
 		1A0BD6261B925D5500B61C07 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 		1A0BD6301B925D5500B61C07 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1A0BD6311B925D5500B61C07 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		1A0BD6321B925D5500B61C07 /* TextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
-		1A0BD6331B925D5500B61C07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A0BD6511B92665500B61C07 /* DatePickerPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerPopUp.xib; sourceTree = "<group>"; };
 		1A0BD6531B92666700B61C07 /* PickerViewPickerPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewPickerPopUp.xib; sourceTree = "<group>"; };
 		1A0BD6571B926A0200B61C07 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -141,9 +138,10 @@
 		1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1A0BD6711B926AD900B61C07 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libstdc++.6.dylib"; sourceTree = "<group>"; };
-		1A0BD6721B926AD900B61C07 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3.dylib; sourceTree = "<group>"; };
-		1A0BD6761B92812400B61C07 /* AdventureClub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdventureClub-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A352CCC1B938711001A2573 /* TextInputBackgound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputBackgound.swift; sourceTree = "<group>"; };
+		1A5709441B929AD700755EDF /* AdventureClub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdventureClub-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A5709451B929D6E00755EDF /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		1A5709471B929D8500755EDF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +149,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0BD6731B926AD900B61C07 /* libstdc++.6.dylib in Frameworks */,
+				1A5709481B929D8500755EDF /* libsqlite3.tbd in Frameworks */,
+				1A5709461B929D6E00755EDF /* libstdc++.6.tbd in Frameworks */,
 				1A0BD6701B926A9000B61C07 /* AudioToolbox.framework in Frameworks */,
 				1A0BD66E1B926A8300B61C07 /* MobileCoreServices.framework in Frameworks */,
 				1A0BD66A1B926A6000B61C07 /* SystemConfiguration.framework in Frameworks */,
@@ -163,7 +162,6 @@
 				1A0BD6601B926A0200B61C07 /* ParseUI.framework in Frameworks */,
 				1A0BD6641B926A3700B61C07 /* FBSDKLoginKit.framework in Frameworks */,
 				1A0BD65F1B926A0200B61C07 /* ParseFacebookUtilsV4.framework in Frameworks */,
-				1A0BD6741B926AD900B61C07 /* libsqlite3.dylib in Frameworks */,
 				1A0BD65C1B926A0200B61C07 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +210,7 @@
 				1A0BD6441B9262D800B61C07 /* Models */,
 				1A0BD5D41B925C6A00B61C07 /* AppDelegate.swift */,
 				1A0BD5D61B925C6A00B61C07 /* ViewController.swift */,
+				1A5709441B929AD700755EDF /* AdventureClub-Bridging-Header.h */,
 				1A0BD5D81B925C6A00B61C07 /* Main.storyboard */,
 				1A0BD5DB1B925C6A00B61C07 /* Assets.xcassets */,
 				1A0BD6311B925D5500B61C07 /* SplashScreen.swift */,
@@ -224,7 +223,6 @@
 		1A0BD5E81B925C6A00B61C07 /* AdventureClubTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A0BD6761B92812400B61C07 /* AdventureClub-Bridging-Header.h */,
 				1A0BD5E91B925C6A00B61C07 /* AdventureClubTests.swift */,
 				1A0BD5EB1B925C6A00B61C07 /* Info.plist */,
 			);
@@ -243,8 +241,8 @@
 		1A0BD6431B925D6200B61C07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A0BD6711B926AD900B61C07 /* libstdc++.6.dylib */,
-				1A0BD6721B926AD900B61C07 /* libsqlite3.dylib */,
+				1A5709471B929D8500755EDF /* libsqlite3.tbd */,
+				1A5709451B929D6E00755EDF /* libstdc++.6.tbd */,
 				1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */,
 				1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */,
 				1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */,
@@ -264,7 +262,6 @@
 		1A0BD6441B9262D800B61C07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1A0BD6561B92675600B61C07 /* Users and Friendship */,
 				1A0BD6551B9266AC00B61C07 /* Data */,
 				1A0BD6491B9263D900B61C07 /* Extensions */,
 				1A0BD6481B92631F00B61C07 /* PopUp Pickers */,
@@ -279,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0BD6101B925D2C00B61C07 /* BackgroundView.swift */,
+				1A352CCC1B938711001A2573 /* TextInputBackgound.swift */,
 				1A0BD6051B925D1300B61C07 /* ActivityCardView.swift */,
 				1A0BD6251B925D5500B61C07 /* LabelStyle.swift */,
 				1A0BD62D1B925D5500B61C07 /* PictureImageView.swift */,
@@ -394,15 +392,6 @@
 				1A0BD6041B925D1300B61C07 /* ActivityCard.xib */,
 			);
 			name = Data;
-			sourceTree = "<group>";
-		};
-		1A0BD6561B92675600B61C07 /* Users and Friendship */ = {
-			isa = PBXGroup;
-			children = (
-				1A0BD6331B925D5500B61C07 /* User.swift */,
-				1A0BD61A1B925D4300B61C07 /* Friendship.swift */,
-			);
-			name = "Users and Friendship";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -550,7 +539,6 @@
 				1A0BD60A1B925D1300B61C07 /* ActivityCard.swift in Sources */,
 				1A0BD6091B925D1300B61C07 /* ActivitiesTableViewController.swift in Sources */,
 				1A0BD6411B925D5500B61C07 /* TextFieldStyle.swift in Sources */,
-				1A0BD6421B925D5500B61C07 /* User.swift in Sources */,
 				1A0BD60D1B925D1300B61C07 /* ActivityModel.swift in Sources */,
 				1A0BD6391B925D5500B61C07 /* PickerViewController.swift in Sources */,
 				1A0BD6351B925D5500B61C07 /* LoginViewController.swift in Sources */,
@@ -559,7 +547,6 @@
 				1A0BD5D71B925C6A00B61C07 /* ViewController.swift in Sources */,
 				1A0BD6401B925D5500B61C07 /* SplashScreen.swift in Sources */,
 				1A0BD6381B925D5500B61C07 /* NewActivityViewController.swift in Sources */,
-				1A0BD6231B925D4300B61C07 /* Friendship.swift in Sources */,
 				1A0BD61F1B925D4300B61C07 /* DateFormat.swift in Sources */,
 				1A0BD60E1B925D1300B61C07 /* ActivityTableViewCell.swift in Sources */,
 				1A0BD6371B925D5500B61C07 /* MatchesTableViewController.swift in Sources */,
@@ -572,6 +559,7 @@
 				1A0BD61D1B925D4300B61C07 /* ButtonStyle.swift in Sources */,
 				1A0BD6241B925D4300B61C07 /* ImageAsyncFromURL.swift in Sources */,
 				1A0BD63F1B925D5500B61C07 /* SignUpViewController.swift in Sources */,
+				1A352CCD1B938711001A2573 /* TextInputBackgound.swift in Sources */,
 				1A0BD61E1B925D4300B61C07 /* ChatViewController.swift in Sources */,
 				1A0BD6341B925D5500B61C07 /* LabelStyle.swift in Sources */,
 				1A0BD63D1B925D5500B61C07 /* SearchTableViewController.swift in Sources */,
@@ -734,7 +722,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.AdventureClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AdventureClub/AdventureClub-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdventureClub-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -756,7 +744,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.AdventureClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AdventureClub/AdventureClub-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdventureClub-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -827,6 +815,7 @@
 				1A0BD5FB1B925C6A00B61C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A0BD5FC1B925C6A00B61C07 /* Build configuration list for PBXNativeTarget "AdventureClubTests" */ = {
 			isa = XCConfigurationList;
@@ -835,6 +824,7 @@
 				1A0BD5FE1B925C6A00B61C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A0BD5FF1B925C6A00B61C07 /* Build configuration list for PBXNativeTarget "AdventureClubUITests" */ = {
 			isa = XCConfigurationList;
@@ -843,6 +833,7 @@
 				1A0BD6011B925C6A00B61C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

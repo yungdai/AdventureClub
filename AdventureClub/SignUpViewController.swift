@@ -121,7 +121,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         let lastName = lastNameField.text
         let password = passwordField.text
         let passwordConfirmation = passwordConfirmationField.text
-        let emailAddress = emailAddressField.text.lowercaseString
+        let emailAddress = emailAddressField.text!.lowercaseString
         activityIndicator.hidden = false
         activityIndicator.startAnimating()
         
@@ -139,31 +139,31 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         
         // Messaging nil will return 0, so these checks implicitly check for nil text.
-        if username.characters.count == 0 || password.characters.count == 0 || passwordConfirmation.characters.count == 0 {
+        if username!.characters.count == 0 || password!.characters.count == 0 || passwordConfirmation!.characters.count == 0 {
             textError = true
             
             // Set up the keyboard for the first field missing input:
-            if username.characters.count == 0 {
+            if username!.characters.count == 0 {
                 errorText += usernameBlankText
                 usernameField.becomeFirstResponder()
             }
             
-            if firstName.characters.count == 0 {
+            if firstName!.characters.count == 0 {
                 errorText += firstNameBlankText
                 firstNameField.becomeFirstResponder()
             }
             
-            if lastName.characters.count == 0 {
+            if lastName!.characters.count == 0 {
                 errorText += lastNameBlankText
                 lastNameField.becomeFirstResponder()
             }
             
             
-            if password.characters.count == 0 {
+            if password!.characters.count == 0 {
                 passwordField.becomeFirstResponder()
             }
             
-            if passwordConfirmation.characters.count == 0 {
+            if passwordConfirmation!.characters.count == 0 {
                 passwordConfirmationField.becomeFirstResponder()
             }
             
@@ -173,8 +173,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             }
             
             // error text feedback for the password boxes
-           if password.characters.count == 0 || passwordConfirmation.characters.count == 0 {
-                if username.characters.count == 0 {
+           if password!.characters.count == 0 || passwordConfirmation!.characters.count == 0 {
+                if username!.characters.count == 0 {
                     // we need some joining text in the error
                     errorText += jointText
                 }
@@ -207,7 +207,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         parseUser.signUpInBackgroundWithBlock({ (succeeded: Bool, error: NSError?) -> Void in
             
             if error == nil {
-                println("signed up user to Parse")
+                print("signed up user to Parse")
                 // send them over to the main app
                 // User needs to verify email address before continuing
                 let alertController = UIAlertController(title: "Email address verification",
@@ -225,7 +225,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 
                 self.activityIndicator.stopAnimating()
                 
-                if let message: AnyObject = error!.userInfo!["error"] {
+                if let message: AnyObject = error!.userInfo["error"] {
                     self.errorMessageLabel.text = "\(message)"
                 }
                 return

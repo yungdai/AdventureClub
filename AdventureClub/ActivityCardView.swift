@@ -37,18 +37,8 @@ import UIKit
         }
     }
     
-    @IBInspectable var gradientStartColor: UIColor = UIColor.whiteColor() {
-        didSet{
-            
-            setupView()
-        }
-    }
-    
-    @IBInspectable var gradientEndColor: UIColor = UIColor.blackColor() {
-        didSet{
-            setupView()
-        }
-    }
+    @IBInspectable var gradientStartColor: UIColor = UIColor.whiteColor()
+    @IBInspectable var gradientEndColor: UIColor = UIColor.blackColor()
     
     @IBInspectable var isHorizontal: Bool = false {
         didSet{
@@ -56,11 +46,7 @@ import UIKit
         }
     }
     
-    @IBInspectable var roundness: CGFloat = 0.0 {
-        didSet{
-            setupView()
-        }
-    }
+    @IBInspectable var roundness: CGFloat = 0.0
     
     // MARK: Internal functions *********************************
     
@@ -120,72 +106,5 @@ import UIKit
         layer.masksToBounds = true
         
     }
-
-    
-//    override func prepareForInterfaceBuilder() {
-//        createMySubViews()
-//        styleAndAddMySubviews()
-//    }
-//    
-//    override func awakeFromNib() {
-//        createMySubViews()
-//        styleAndAddMySubviews()
-//    }
-//    
-//    // adding card values
-//    var cardOne:UIView?
-//    var cardTwo:UIView?
-//    var cardThree:UIView?
-//    var contentView:UIView?
-//    
-//    let initialRotationAngle = CGFloat(M_PI/180)
-//    
-//    func createMySubViews() {
-//        cardOne = UIView(frame: CGRectMake(0, 0, self.layer.bounds.width, self.layer.bounds.height)) //self.frame.width//, self.frame.height))
-//        cardTwo = UIView(frame: CGRectMake(0, 0, self.frame.width, self.frame.height))
-//        cardThree = UIView(frame: CGRectMake(0, 0, self.frame.width, self.frame.height))
-//        contentView = UIView(frame: CGRectMake(0, 0, self.bounds.width, self.bounds.height))
-//    }
-//    
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        cardOne?.frame = CGRectMake(0, 0, self.bounds.width, self.bounds.height)//self.frame.width//, self.frame.height))
-//        cardTwo?.frame = CGRectMake(0, 0, self.bounds.width, self.bounds.height)
-//        cardThree?.frame = CGRectMake(0, 0, self.bounds.width, self.bounds.height)
-//        contentView?.frame = CGRectMake(0, 0, self.bounds.width, self.bounds.height)
-//    }
-//    func styleAndAddMySubviews() {
-//        if let cOne = cardOne, cTwo = cardTwo, cThree = cardThree, content = contentView {
-//            viewStyle(cOne)
-//            cOne.transform = CGAffineTransformMakeRotation(initialRotationAngle)
-//            addSubview(cOne)
-//            
-//            viewStyle(cTwo)
-//            cTwo.transform = CGAffineTransformMakeRotation(-initialRotationAngle)
-//            addSubview(cTwo)
-//            
-//            viewStyle(cThree)
-//            cThree.transform = CGAffineTransformMakeRotation(2*initialRotationAngle)
-//            addSubview(cThree)
-//            
-//            //styleMyView(content)
-//            viewStyle(content)
-//            addSubview(content)
-//            
-//        }
-//    }
-//    
-//    
-//    func viewStyle(view: UIView) -> UIView{
-//        view.backgroundColor = blockColour
-//        view.layer.cornerRadius = cornerRounding
-//        view.layer.borderWidth = borderWidth
-//        view.layer.borderColor = borderColour?.CGColor
-//        view.layer.masksToBounds = true
-//        view.layer.bounds = self.bounds
-//
-//        return view
-//        
-//    }
-    
 }
+    

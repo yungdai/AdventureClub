@@ -100,7 +100,7 @@ class MainAppViewController: UIViewController{
         frame = CGRectZero
         
         // get all Activity Objects that aren't yours
-        var query = PFQuery(className: "Activity")
+        let query = PFQuery(className: "Activity")
         query.includeKey("createdBy")
         query.whereKey("createdBy", notEqualTo: PFUser.currentUser()!)
         
@@ -122,7 +122,7 @@ class MainAppViewController: UIViewController{
     
     func getActivites() {
         // get all Activity Objects that aren't yours
-        var query = PFQuery(className: "Activity")
+        let query = PFQuery(className: "Activity")
         query.whereKey("creator", notEqualTo: PFUser.currentUser()!.username!)
         
         
@@ -173,7 +173,7 @@ class MainAppViewController: UIViewController{
             if let activityImage = activity["image"] as? PFFile {
                 activityImage.getDataInBackgroundWithBlock({ (data, error: NSError?) -> Void in
                     if (error != nil) {
-                        println(error)
+                        print(error)
                         // TODO throw error message
                         return
                     }
@@ -189,7 +189,7 @@ class MainAppViewController: UIViewController{
             if let activityOwner = activity["createdBy"]?.objectForKey("userImage") as? PFFile {
                 activityOwner.getDataInBackgroundWithBlock({ (data, error: NSError?) -> Void in
                     if (error != nil) {
-                        println(error)
+                        print(error)
                         return
                     }
                     
@@ -255,22 +255,22 @@ class MainAppViewController: UIViewController{
                         
                         switch self.cardSelectionState {
                         case .NoSelection:
-                            print("No Selection")
+                            print("No Selection", terminator: "")
                             
                         case .MakingSelection:
-                            print("Making Selection")
+                            print("Making Selection", terminator: "")
                             
                         case .SwipingLeft:
-                            print("Swiping Left")
+                            print("Swiping Left", terminator: "")
                             
                         case .SwipedLeft:
-                            print("Swiped Left")
+                            print("Swiped Left", terminator: "")
                             
                         case .SwipingRight:
-                            print("Swiping Right")
+                            print("Swiping Right", terminator: "")
                             
                         case .SwipedRight:
-                            print("Swiped RIght")
+                            print("Swiped RIght", terminator: "")
                             
                         }
                         self.cardSelectionState = .NoSelection
@@ -305,10 +305,10 @@ class MainAppViewController: UIViewController{
             likedActivity.saveInBackgroundWithBlock({ (success, error: NSError?) -> Void in
                 if (error != nil) {
                     //TODO: Set up Alert
-                    println(error)
+                    print(error)
                     
                 } else {
-                    println("liked activity added")
+                    print("liked activity added")
                 }
             })
         }
