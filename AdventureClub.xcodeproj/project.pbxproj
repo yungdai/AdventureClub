@@ -14,6 +14,54 @@
 		1A0BD5DF1B925C6A00B61C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD5DD1B925C6A00B61C07 /* LaunchScreen.storyboard */; };
 		1A0BD5EA1B925C6A00B61C07 /* AdventureClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD5E91B925C6A00B61C07 /* AdventureClubTests.swift */; };
 		1A0BD5F51B925C6A00B61C07 /* AdventureClubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD5F41B925C6A00B61C07 /* AdventureClubUITests.swift */; };
+		1A0BD6091B925D1300B61C07 /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6021B925D1300B61C07 /* ActivitiesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD60A1B925D1300B61C07 /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6031B925D1300B61C07 /* ActivityCard.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD60B1B925D1300B61C07 /* ActivityCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD6041B925D1300B61C07 /* ActivityCard.xib */; settings = {ASSET_TAGS = (); }; };
+		1A0BD60C1B925D1300B61C07 /* ActivityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6051B925D1300B61C07 /* ActivityCardView.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD60D1B925D1300B61C07 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6061B925D1300B61C07 /* ActivityModel.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD60E1B925D1300B61C07 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6071B925D1300B61C07 /* ActivityTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD60F1B925D1300B61C07 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6081B925D1300B61C07 /* APIKeys.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6111B925D2C00B61C07 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6101B925D2C00B61C07 /* BackgroundView.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD61C1B925D4300B61C07 /* BuddiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6121B925D4300B61C07 /* BuddiesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD61D1B925D4300B61C07 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6141B925D4300B61C07 /* ButtonStyle.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD61E1B925D4300B61C07 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6151B925D4300B61C07 /* ChatViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD61F1B925D4300B61C07 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6161B925D4300B61C07 /* DateFormat.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6201B925D4300B61C07 /* DatePickerPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6171B925D4300B61C07 /* DatePickerPopUp.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6211B925D4300B61C07 /* DatePickerPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD6181B925D4300B61C07 /* DatePickerPopUp.xib */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6221B925D4300B61C07 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6191B925D4300B61C07 /* DatePickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6231B925D4300B61C07 /* Friendship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD61A1B925D4300B61C07 /* Friendship.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6241B925D4300B61C07 /* ImageAsyncFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD61B1B925D4300B61C07 /* ImageAsyncFromURL.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6341B925D5500B61C07 /* LabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6251B925D5500B61C07 /* LabelStyle.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6351B925D5500B61C07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6261B925D5500B61C07 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6361B925D5500B61C07 /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6271B925D5500B61C07 /* MainAppViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6371B925D5500B61C07 /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6281B925D5500B61C07 /* MatchesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6381B925D5500B61C07 /* NewActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6291B925D5500B61C07 /* NewActivityViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6391B925D5500B61C07 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD62A1B925D5500B61C07 /* PickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD63A1B925D5500B61C07 /* PickerViewPickerPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD62B1B925D5500B61C07 /* PickerViewPickerPopUp.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD63B1B925D5500B61C07 /* PickerViewPickerPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD62C1B925D5500B61C07 /* PickerViewPickerPopUp.xib */; settings = {ASSET_TAGS = (); }; };
+		1A0BD63C1B925D5500B61C07 /* PictureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD62D1B925D5500B61C07 /* PictureImageView.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD63D1B925D5500B61C07 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD62E1B925D5500B61C07 /* SearchTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD63E1B925D5500B61C07 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD62F1B925D5500B61C07 /* SettingsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD63F1B925D5500B61C07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6301B925D5500B61C07 /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6401B925D5500B61C07 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6311B925D5500B61C07 /* SplashScreen.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6411B925D5500B61C07 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6321B925D5500B61C07 /* TextFieldStyle.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6421B925D5500B61C07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD6331B925D5500B61C07 /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6521B92665500B61C07 /* DatePickerPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD6511B92665500B61C07 /* DatePickerPopUp.xib */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6541B92666700B61C07 /* PickerViewPickerPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD6531B92666700B61C07 /* PickerViewPickerPopUp.xib */; settings = {ASSET_TAGS = (); }; };
+		1A0BD65C1B926A0200B61C07 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6571B926A0200B61C07 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		1A0BD65D1B926A0200B61C07 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6581B926A0200B61C07 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		1A0BD65E1B926A0200B61C07 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6591B926A0200B61C07 /* ParseCrashReporting.framework */; settings = {ASSET_TAGS = (); }; };
+		1A0BD65F1B926A0200B61C07 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD65A1B926A0200B61C07 /* ParseFacebookUtilsV4.framework */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6601B926A0200B61C07 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD65B1B926A0200B61C07 /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6631B926A3700B61C07 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6611B926A3700B61C07 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6641B926A3700B61C07 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6621B926A3700B61C07 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6661B926A4800B61C07 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6651B926A4800B61C07 /* QuartzCore.framework */; };
+		1A0BD6681B926A5500B61C07 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6671B926A5500B61C07 /* Social.framework */; };
+		1A0BD66A1B926A6000B61C07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */; };
+		1A0BD66E1B926A8300B61C07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */; };
+		1A0BD6701B926A9000B61C07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */; };
+		1A0BD6731B926AD900B61C07 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6711B926AD900B61C07 /* libstdc++.6.dylib */; settings = {ASSET_TAGS = (); }; };
+		1A0BD6741B926AD900B61C07 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6721B926AD900B61C07 /* libsqlite3.dylib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +95,55 @@
 		1A0BD5F01B925C6A00B61C07 /* AdventureClubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventureClubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0BD5F41B925C6A00B61C07 /* AdventureClubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureClubUITests.swift; sourceTree = "<group>"; };
 		1A0BD5F61B925C6A00B61C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0BD6021B925D1300B61C07 /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
+		1A0BD6031B925D1300B61C07 /* ActivityCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
+		1A0BD6041B925D1300B61C07 /* ActivityCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCard.xib; sourceTree = "<group>"; };
+		1A0BD6051B925D1300B61C07 /* ActivityCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCardView.swift; sourceTree = "<group>"; };
+		1A0BD6061B925D1300B61C07 /* ActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		1A0BD6071B925D1300B61C07 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		1A0BD6081B925D1300B61C07 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		1A0BD6101B925D2C00B61C07 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		1A0BD6121B925D4300B61C07 /* BuddiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddiesTableViewController.swift; sourceTree = "<group>"; };
+		1A0BD6141B925D4300B61C07 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		1A0BD6151B925D4300B61C07 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1A0BD6161B925D4300B61C07 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		1A0BD6171B925D4300B61C07 /* DatePickerPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerPopUp.swift; sourceTree = "<group>"; };
+		1A0BD6181B925D4300B61C07 /* DatePickerPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerPopUp.xib; sourceTree = "<group>"; };
+		1A0BD6191B925D4300B61C07 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		1A0BD61A1B925D4300B61C07 /* Friendship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friendship.swift; sourceTree = "<group>"; };
+		1A0BD61B1B925D4300B61C07 /* ImageAsyncFromURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsyncFromURL.swift; sourceTree = "<group>"; };
+		1A0BD6251B925D5500B61C07 /* LabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStyle.swift; sourceTree = "<group>"; };
+		1A0BD6261B925D5500B61C07 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1A0BD6271B925D5500B61C07 /* MainAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
+		1A0BD6281B925D5500B61C07 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
+		1A0BD6291B925D5500B61C07 /* NewActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewActivityViewController.swift; sourceTree = "<group>"; };
+		1A0BD62A1B925D5500B61C07 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		1A0BD62B1B925D5500B61C07 /* PickerViewPickerPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewPickerPopUp.swift; sourceTree = "<group>"; };
+		1A0BD62C1B925D5500B61C07 /* PickerViewPickerPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewPickerPopUp.xib; sourceTree = "<group>"; };
+		1A0BD62D1B925D5500B61C07 /* PictureImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureImageView.swift; sourceTree = "<group>"; };
+		1A0BD62E1B925D5500B61C07 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		1A0BD62F1B925D5500B61C07 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		1A0BD6301B925D5500B61C07 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1A0BD6311B925D5500B61C07 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		1A0BD6321B925D5500B61C07 /* TextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
+		1A0BD6331B925D5500B61C07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1A0BD6511B92665500B61C07 /* DatePickerPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerPopUp.xib; sourceTree = "<group>"; };
+		1A0BD6531B92666700B61C07 /* PickerViewPickerPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewPickerPopUp.xib; sourceTree = "<group>"; };
+		1A0BD6571B926A0200B61C07 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		1A0BD6581B926A0200B61C07 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		1A0BD6591B926A0200B61C07 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		1A0BD65A1B926A0200B61C07 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		1A0BD65B1B926A0200B61C07 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		1A0BD6611B926A3700B61C07 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		1A0BD6621B926A3700B61C07 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		1A0BD6651B926A4800B61C07 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1A0BD6671B926A5500B61C07 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1A0BD6711B926AD900B61C07 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libstdc++.6.dylib"; sourceTree = "<group>"; };
+		1A0BD6721B926AD900B61C07 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3.dylib; sourceTree = "<group>"; };
+		1A0BD6761B92812400B61C07 /* AdventureClub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdventureClub-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +151,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0BD6731B926AD900B61C07 /* libstdc++.6.dylib in Frameworks */,
+				1A0BD6701B926A9000B61C07 /* AudioToolbox.framework in Frameworks */,
+				1A0BD66E1B926A8300B61C07 /* MobileCoreServices.framework in Frameworks */,
+				1A0BD66A1B926A6000B61C07 /* SystemConfiguration.framework in Frameworks */,
+				1A0BD6681B926A5500B61C07 /* Social.framework in Frameworks */,
+				1A0BD6661B926A4800B61C07 /* QuartzCore.framework in Frameworks */,
+				1A0BD65D1B926A0200B61C07 /* Parse.framework in Frameworks */,
+				1A0BD6631B926A3700B61C07 /* FBSDKCoreKit.framework in Frameworks */,
+				1A0BD65E1B926A0200B61C07 /* ParseCrashReporting.framework in Frameworks */,
+				1A0BD6601B926A0200B61C07 /* ParseUI.framework in Frameworks */,
+				1A0BD6641B926A3700B61C07 /* FBSDKLoginKit.framework in Frameworks */,
+				1A0BD65F1B926A0200B61C07 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				1A0BD6741B926AD900B61C07 /* libsqlite3.dylib in Frameworks */,
+				1A0BD65C1B926A0200B61C07 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,10 +208,13 @@
 		1A0BD5D31B925C6900B61C07 /* AdventureClub */ = {
 			isa = PBXGroup;
 			children = (
+				1A0BD6431B925D6200B61C07 /* Frameworks */,
+				1A0BD6441B9262D800B61C07 /* Models */,
 				1A0BD5D41B925C6A00B61C07 /* AppDelegate.swift */,
 				1A0BD5D61B925C6A00B61C07 /* ViewController.swift */,
 				1A0BD5D81B925C6A00B61C07 /* Main.storyboard */,
 				1A0BD5DB1B925C6A00B61C07 /* Assets.xcassets */,
+				1A0BD6311B925D5500B61C07 /* SplashScreen.swift */,
 				1A0BD5DD1B925C6A00B61C07 /* LaunchScreen.storyboard */,
 				1A0BD5E01B925C6A00B61C07 /* Info.plist */,
 			);
@@ -110,6 +224,7 @@
 		1A0BD5E81B925C6A00B61C07 /* AdventureClubTests */ = {
 			isa = PBXGroup;
 			children = (
+				1A0BD6761B92812400B61C07 /* AdventureClub-Bridging-Header.h */,
 				1A0BD5E91B925C6A00B61C07 /* AdventureClubTests.swift */,
 				1A0BD5EB1B925C6A00B61C07 /* Info.plist */,
 			);
@@ -123,6 +238,171 @@
 				1A0BD5F61B925C6A00B61C07 /* Info.plist */,
 			);
 			path = AdventureClubUITests;
+			sourceTree = "<group>";
+		};
+		1A0BD6431B925D6200B61C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6711B926AD900B61C07 /* libstdc++.6.dylib */,
+				1A0BD6721B926AD900B61C07 /* libsqlite3.dylib */,
+				1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */,
+				1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */,
+				1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */,
+				1A0BD6671B926A5500B61C07 /* Social.framework */,
+				1A0BD6651B926A4800B61C07 /* QuartzCore.framework */,
+				1A0BD6611B926A3700B61C07 /* FBSDKCoreKit.framework */,
+				1A0BD6621B926A3700B61C07 /* FBSDKLoginKit.framework */,
+				1A0BD6571B926A0200B61C07 /* Bolts.framework */,
+				1A0BD6581B926A0200B61C07 /* Parse.framework */,
+				1A0BD6591B926A0200B61C07 /* ParseCrashReporting.framework */,
+				1A0BD65A1B926A0200B61C07 /* ParseFacebookUtilsV4.framework */,
+				1A0BD65B1B926A0200B61C07 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A0BD6441B9262D800B61C07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6561B92675600B61C07 /* Users and Friendship */,
+				1A0BD6551B9266AC00B61C07 /* Data */,
+				1A0BD6491B9263D900B61C07 /* Extensions */,
+				1A0BD6481B92631F00B61C07 /* PopUp Pickers */,
+				1A0BD6471B92630E00B61C07 /* Activities */,
+				1A0BD6461B9262FF00B61C07 /* Element and Design Styling */,
+				1A0BD64A1B92648B00B61C07 /* ViewControllers */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1A0BD6461B9262FF00B61C07 /* Element and Design Styling */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6101B925D2C00B61C07 /* BackgroundView.swift */,
+				1A0BD6051B925D1300B61C07 /* ActivityCardView.swift */,
+				1A0BD6251B925D5500B61C07 /* LabelStyle.swift */,
+				1A0BD62D1B925D5500B61C07 /* PictureImageView.swift */,
+				1A0BD6321B925D5500B61C07 /* TextFieldStyle.swift */,
+				1A0BD6141B925D4300B61C07 /* ButtonStyle.swift */,
+			);
+			name = "Element and Design Styling";
+			sourceTree = "<group>";
+		};
+		1A0BD6471B92630E00B61C07 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6061B925D1300B61C07 /* ActivityModel.swift */,
+				1A0BD6071B925D1300B61C07 /* ActivityTableViewCell.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		1A0BD6481B92631F00B61C07 /* PopUp Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD62B1B925D5500B61C07 /* PickerViewPickerPopUp.swift */,
+				1A0BD62C1B925D5500B61C07 /* PickerViewPickerPopUp.xib */,
+				1A0BD6161B925D4300B61C07 /* DateFormat.swift */,
+				1A0BD6171B925D4300B61C07 /* DatePickerPopUp.swift */,
+				1A0BD6181B925D4300B61C07 /* DatePickerPopUp.xib */,
+			);
+			name = "PopUp Pickers";
+			sourceTree = "<group>";
+		};
+		1A0BD6491B9263D900B61C07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD61B1B925D4300B61C07 /* ImageAsyncFromURL.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		1A0BD64A1B92648B00B61C07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6501B9264DB00B61C07 /* PopUp Congtrollers */,
+				1A0BD64F1B9264CE00B61C07 /* Login Sign Up */,
+				1A0BD64E1B9264C100B61C07 /* Activities */,
+				1A0BD64D1B9264AA00B61C07 /* Searches */,
+				1A0BD64C1B9264A400B61C07 /* Settings */,
+				1A0BD64B1B92649D00B61C07 /* Main App */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1A0BD64B1B92649D00B61C07 /* Main App */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6271B925D5500B61C07 /* MainAppViewController.swift */,
+				1A0BD6281B925D5500B61C07 /* MatchesTableViewController.swift */,
+				1A0BD6121B925D4300B61C07 /* BuddiesTableViewController.swift */,
+				1A0BD6151B925D4300B61C07 /* ChatViewController.swift */,
+			);
+			name = "Main App";
+			sourceTree = "<group>";
+		};
+		1A0BD64C1B9264A400B61C07 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD62F1B925D5500B61C07 /* SettingsTableViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		1A0BD64D1B9264AA00B61C07 /* Searches */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD62E1B925D5500B61C07 /* SearchTableViewController.swift */,
+			);
+			name = Searches;
+			sourceTree = "<group>";
+		};
+		1A0BD64E1B9264C100B61C07 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6021B925D1300B61C07 /* ActivitiesTableViewController.swift */,
+				1A0BD6291B925D5500B61C07 /* NewActivityViewController.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		1A0BD64F1B9264CE00B61C07 /* Login Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6261B925D5500B61C07 /* LoginViewController.swift */,
+				1A0BD6301B925D5500B61C07 /* SignUpViewController.swift */,
+			);
+			name = "Login Sign Up";
+			sourceTree = "<group>";
+		};
+		1A0BD6501B9264DB00B61C07 /* PopUp Congtrollers */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6531B92666700B61C07 /* PickerViewPickerPopUp.xib */,
+				1A0BD6511B92665500B61C07 /* DatePickerPopUp.xib */,
+				1A0BD62A1B925D5500B61C07 /* PickerViewController.swift */,
+				1A0BD6191B925D4300B61C07 /* DatePickerViewController.swift */,
+			);
+			name = "PopUp Congtrollers";
+			sourceTree = "<group>";
+		};
+		1A0BD6551B9266AC00B61C07 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6081B925D1300B61C07 /* APIKeys.swift */,
+				1A0BD6031B925D1300B61C07 /* ActivityCard.swift */,
+				1A0BD6041B925D1300B61C07 /* ActivityCard.xib */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		1A0BD6561B92675600B61C07 /* Users and Friendship */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BD6331B925D5500B61C07 /* User.swift */,
+				1A0BD61A1B925D4300B61C07 /* Friendship.swift */,
+			);
+			name = "Users and Friendship";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +467,17 @@
 		1A0BD5C91B925C6900B61C07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Yung Dai";
 				TargetAttributes = {
 					1A0BD5D01B925C6900B61C07 = {
 						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					1A0BD5E41B925C6A00B61C07 = {
 						CreatedOnToolsVersion = 7.0;
@@ -228,7 +514,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0BD60B1B925D1300B61C07 /* ActivityCard.xib in Resources */,
+				1A0BD63B1B925D5500B61C07 /* PickerViewPickerPopUp.xib in Resources */,
+				1A0BD6521B92665500B61C07 /* DatePickerPopUp.xib in Resources */,
+				1A0BD6211B925D4300B61C07 /* DatePickerPopUp.xib in Resources */,
 				1A0BD5DF1B925C6A00B61C07 /* LaunchScreen.storyboard in Resources */,
+				1A0BD6541B92666700B61C07 /* PickerViewPickerPopUp.xib in Resources */,
 				1A0BD5DC1B925C6A00B61C07 /* Assets.xcassets in Resources */,
 				1A0BD5DA1B925C6A00B61C07 /* Main.storyboard in Resources */,
 			);
@@ -255,8 +546,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0BD6111B925D2C00B61C07 /* BackgroundView.swift in Sources */,
+				1A0BD60A1B925D1300B61C07 /* ActivityCard.swift in Sources */,
+				1A0BD6091B925D1300B61C07 /* ActivitiesTableViewController.swift in Sources */,
+				1A0BD6411B925D5500B61C07 /* TextFieldStyle.swift in Sources */,
+				1A0BD6421B925D5500B61C07 /* User.swift in Sources */,
+				1A0BD60D1B925D1300B61C07 /* ActivityModel.swift in Sources */,
+				1A0BD6391B925D5500B61C07 /* PickerViewController.swift in Sources */,
+				1A0BD6351B925D5500B61C07 /* LoginViewController.swift in Sources */,
+				1A0BD6201B925D4300B61C07 /* DatePickerPopUp.swift in Sources */,
+				1A0BD61C1B925D4300B61C07 /* BuddiesTableViewController.swift in Sources */,
 				1A0BD5D71B925C6A00B61C07 /* ViewController.swift in Sources */,
+				1A0BD6401B925D5500B61C07 /* SplashScreen.swift in Sources */,
+				1A0BD6381B925D5500B61C07 /* NewActivityViewController.swift in Sources */,
+				1A0BD6231B925D4300B61C07 /* Friendship.swift in Sources */,
+				1A0BD61F1B925D4300B61C07 /* DateFormat.swift in Sources */,
+				1A0BD60E1B925D1300B61C07 /* ActivityTableViewCell.swift in Sources */,
+				1A0BD6371B925D5500B61C07 /* MatchesTableViewController.swift in Sources */,
+				1A0BD63C1B925D5500B61C07 /* PictureImageView.swift in Sources */,
 				1A0BD5D51B925C6A00B61C07 /* AppDelegate.swift in Sources */,
+				1A0BD60F1B925D1300B61C07 /* APIKeys.swift in Sources */,
+				1A0BD63E1B925D5500B61C07 /* SettingsTableViewController.swift in Sources */,
+				1A0BD6221B925D4300B61C07 /* DatePickerViewController.swift in Sources */,
+				1A0BD63A1B925D5500B61C07 /* PickerViewPickerPopUp.swift in Sources */,
+				1A0BD61D1B925D4300B61C07 /* ButtonStyle.swift in Sources */,
+				1A0BD6241B925D4300B61C07 /* ImageAsyncFromURL.swift in Sources */,
+				1A0BD63F1B925D5500B61C07 /* SignUpViewController.swift in Sources */,
+				1A0BD61E1B925D4300B61C07 /* ChatViewController.swift in Sources */,
+				1A0BD6341B925D5500B61C07 /* LabelStyle.swift in Sources */,
+				1A0BD63D1B925D5500B61C07 /* SearchTableViewController.swift in Sources */,
+				1A0BD60C1B925D1300B61C07 /* ActivityCardView.swift in Sources */,
+				1A0BD6361B925D5500B61C07 /* MainAppViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +648,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.yungdai.AdventureClub";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -373,6 +694,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.yungdai.AdventureClub";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -398,10 +720,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.yungdai.AdventureClub";
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdventureClub",
+				);
 				INFOPLIST_FILE = AdventureClub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.AdventureClub;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdventureClub",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.AdventureClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdventureClub/AdventureClub-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -409,10 +742,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.yungdai.AdventureClub";
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdventureClub",
+				);
 				INFOPLIST_FILE = AdventureClub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = self.edu.AdventureClub;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdventureClub",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.AdventureClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdventureClub/AdventureClub-Bridging-Header.h";
 			};
 			name = Release;
 		};
