@@ -13,13 +13,13 @@ import UIKit
     
 
     
-    @IBInspectable var gradientStartColor: UIColor = UIColor.whiteColor() {
+    @IBInspectable var StartColor: UIColor = UIColor.whiteColor() {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable var gradientEndColor: UIColor = UIColor.blackColor() {
+    @IBInspectable var EndColor: UIColor = UIColor.blackColor() {
         didSet{
             setupView()
         }
@@ -42,7 +42,7 @@ import UIKit
     // Setup the view appearance
     private func setupView(){
         
-        let colors:Array = [gradientStartColor.CGColor, gradientEndColor.CGColor]
+        let colors:Array = [StartColor.CGColor, EndColor.CGColor]
         gradientLayer.colors = colors
         gradientLayer.cornerRadius = roundness
         

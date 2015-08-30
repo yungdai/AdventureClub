@@ -13,32 +13,31 @@ import UIKit
     
     // MARK: Inspectable properties ******************************
     
-    @IBInspectable var blockColour: UIColor = UIColor.grayColor() {
+    @IBInspectable var viewColour: UIColor = UIColor.grayColor() {
         didSet {
-            backgroundColor = blockColour
+            backgroundColor = viewColour
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat  = 1 {
+    @IBInspectable var useGradient: Bool = false {
         didSet {
-            layer.borderWidth = borderWidth
+            setupView()
         }
     }
     
-    @IBInspectable var borderColour: UIColor? {
-        didSet {
-            layer.borderColor = borderColour?.CGColor
+    @IBInspectable var StartColor: UIColor = UIColor.whiteColor() {
+        didSet{
+            setupView()
         }
     }
     
-    @IBInspectable var cornerRounding: CGFloat = 10 {
-        didSet {
-            layer.cornerRadius = cornerRounding
+    @IBInspectable var EndColor: UIColor = UIColor.blackColor() {
+        didSet{
+            setupView()
         }
     }
     
-    @IBInspectable var gradientStartColor: UIColor = UIColor.whiteColor()
-    @IBInspectable var gradientEndColor: UIColor = UIColor.blackColor()
+    
     
     @IBInspectable var isHorizontal: Bool = false {
         didSet{
@@ -46,15 +45,23 @@ import UIKit
         }
     }
     
-    @IBInspectable var roundness: CGFloat = 0.0
+    @IBInspectable var roundness: CGFloat = 0.0 {
+        didSet{
+            setupView()
+        }
+    }
     
     // MARK: Internal functions *********************************
     
     // Setup the view appearance
     private func setupView(){
-        let colors:Array = [gradientStartColor.CGColor, gradientEndColor.CGColor]
-        gradientLayer.colors = colors
-        gradientLayer.cornerRadius = roundness
+        
+        if (useGradient) {
+            let colors:Array = [StartColor.CGColor, EndColor.CGColor]
+            gradientLayer.colors = colors
+            gradientLayer.cornerRadius = roundness
+        }
+        
         
         if (isHorizontal){
             gradientLayer.endPoint = CGPoint(x: 1, y: 0)
@@ -82,28 +89,14 @@ import UIKit
         setupView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
         setupView()
-    }
-    
-    override func prepareForInterfaceBuilder() {
-        viewStyle()
-    }
-    
-    override func awakeFromNib() {
-        viewStyle()
-        
-        
     }
     
     
     func viewStyle() {
-        backgroundColor = blockColour
-        layer.cornerRadius = cornerRounding
-        layer.borderWidth = borderWidth
-        layer.borderColor = borderColour?.CGColor
-        layer.masksToBounds = true
+        backgroundColor = viewColour
         
     }
 }

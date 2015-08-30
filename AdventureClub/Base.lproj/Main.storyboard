@@ -58,6 +58,12 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3a-vA-mFu" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
@@ -97,6 +103,12 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                 <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -200,7 +212,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-iy-vZE">
                                 <rect key="frame" x="20" y="136" width="560" height="340"/>
                                 <subviews>
-                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28i-2U-NPT" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28i-2U-NPT" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="52"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hc-Iw-8lx">
@@ -214,15 +226,16 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
                                                 <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                <color key="value" red="0.82716632089999997" green="0.72803585339999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                <color key="value" red="0.19215686274509802" green="0.38823529411764707" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-vx-dsw">
@@ -251,6 +264,12 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
                                                         <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                        <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                                        <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-Oi-41n" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
@@ -276,11 +295,17 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
                                                         <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                        <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                                        <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-PM-qk4" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-PM-qk4" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="124" width="560" height="52"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2j-U8-Lec">
@@ -302,6 +327,13 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
                                                 <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -328,6 +360,13 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8x-uj-vpU" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
@@ -352,6 +391,13 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                 <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -477,24 +523,97 @@
             </objects>
             <point key="canvasLocation" x="4927" y="-1427"/>
         </scene>
-        <!--Adventures-->
+        <!--Let's.....-->
         <scene sceneID="Yns-Ka-gBQ">
             <objects>
-                <viewController id="1pm-YE-NYP" sceneMemberID="viewController">
+                <viewController id="1pm-YE-NYP" customClass="MainAppViewController" customModule="AdventureClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wwz-Nj-pie"/>
                         <viewControllerLayoutGuide type="bottom" id="2AE-Yj-nMc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4dB-Nc-eeo">
+                    <view key="view" contentMode="scaleToFill" id="4dB-Nc-eeo" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="low-Fw-LNe">
+                                <rect key="frame" x="8" y="449" width="584" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7d6-Zm-0Pr">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-P8-JHm">
+                                                <rect key="frame" x="99" y="9" width="81" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5mp-P8-JHm" secondAttribute="height" multiplier="1:1" id="2vn-NF-rX8"/>
+                                                </constraints>
+                                                <state key="normal" image="checkmark"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5mp-P8-JHm" firstAttribute="centerX" secondItem="7d6-Zm-0Pr" secondAttribute="centerX" id="Jcj-1V-A6O"/>
+                                            <constraint firstItem="5mp-P8-JHm" firstAttribute="centerY" secondItem="7d6-Zm-0Pr" secondAttribute="centerY" id="p2R-zz-Lt4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9I-Fb-qxm">
+                                        <rect key="frame" x="307" y="0.0" width="277" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRU-lB-166">
+                                                <rect key="frame" x="98" y="9" width="81" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aRU-lB-166" secondAttribute="height" multiplier="1:1" id="jo9-vh-GDp"/>
+                                                </constraints>
+                                                <state key="normal" image="cross"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aRU-lB-166" firstAttribute="centerY" secondItem="v9I-Fb-qxm" secondAttribute="centerY" id="3uX-JU-iAq"/>
+                                            <constraint firstItem="aRU-lB-166" firstAttribute="centerX" secondItem="v9I-Fb-qxm" secondAttribute="centerX" id="CEx-XZ-tBs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Eq-Zi-oAf" customClass="ActivityCardView" customModule="AdventureClub" customModuleProvider="target">
+                                <rect key="frame" x="8" y="72" width="584" height="369"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
+                                        <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                        <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                        <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="low-Fw-LNe" secondAttribute="trailing" constant="-24" id="MoR-MD-pcn"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="low-Fw-LNe" secondAttribute="leading" id="U2d-rA-IbX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Adventures" image="buddies" id="yKe-5U-9Z4"/>
+                    <navigationItem key="navigationItem" title="Let's....." id="kVV-40-oBB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjq-FI-8yC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2599" y="-2127"/>
+            <point key="canvasLocation" x="3411" y="-2127"/>
         </scene>
         <!--AdventureClub Bar Controller-->
         <scene sceneID="gez-Jl-on9">
@@ -506,7 +625,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="1pm-YE-NYP" kind="relationship" relationship="viewControllers" id="eEZ-In-SlW"/>
+                        <segue destination="ZCp-ja-a9R" kind="relationship" relationship="viewControllers" id="eEZ-In-SlW"/>
                         <segue destination="RMt-HL-S3C" kind="relationship" relationship="viewControllers" id="hDV-UO-r2t"/>
                         <segue destination="XpL-o7-sYb" kind="relationship" relationship="viewControllers" id="YLs-WV-kls"/>
                         <segue destination="9Fb-7a-0Zj" kind="relationship" relationship="viewControllers" id="hNw-Xb-pvR"/>
@@ -679,11 +798,32 @@
             </objects>
             <point key="canvasLocation" x="15" y="-1427"/>
         </scene>
+        <!--Adventures-->
+        <scene sceneID="dSF-xT-UKC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZCp-ja-a9R" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Adventures" image="buddies" id="yKe-5U-9Z4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cTg-ol-VxD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1pm-YE-NYP" kind="relationship" relationship="rootViewController" id="IwS-yp-3jU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nw0-bA-etk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2599" y="-2127"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Matches" width="37" height="37"/>
         <image name="activities Icon" width="23" height="25"/>
         <image name="buddies" width="35" height="35"/>
+        <image name="checkmark" width="251" height="250"/>
+        <image name="cross" width="251" height="250"/>
         <image name="facebook" width="202" height="46"/>
         <image name="icon_lock" width="12" height="17"/>
         <image name="icon_user" width="16" height="16"/>

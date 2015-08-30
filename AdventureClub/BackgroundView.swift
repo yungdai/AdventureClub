@@ -18,17 +18,25 @@ import UIKit
         }
     }
     
-    @IBInspectable var gradientStartColor: UIColor = UIColor.whiteColor() {
+    @IBInspectable var useGradient: Bool = false {
+        didSet {
+            setupView()
+        }
+    }
+    
+    @IBInspectable var StartColor: UIColor = UIColor.whiteColor() {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable var gradientEndColor: UIColor = UIColor.blackColor() {
+    @IBInspectable var EndColor: UIColor = UIColor.blackColor() {
         didSet{
             setupView()
         }
     }
+    
+
     
     @IBInspectable var isHorizontal: Bool = false {
         didSet{
@@ -47,9 +55,12 @@ import UIKit
     // Setup the view appearance
     private func setupView(){
         
-        let colors:Array = [gradientStartColor.CGColor, gradientEndColor.CGColor]
-        gradientLayer.colors = colors
-        gradientLayer.cornerRadius = roundness
+        if (useGradient) {
+            let colors:Array = [StartColor.CGColor, EndColor.CGColor]
+            gradientLayer.colors = colors
+            gradientLayer.cornerRadius = roundness
+        }
+
         
         if (isHorizontal){
             gradientLayer.endPoint = CGPoint(x: 1, y: 0)
