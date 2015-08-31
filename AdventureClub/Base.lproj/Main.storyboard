@@ -535,7 +535,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="low-Fw-LNe">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F91-1o-8Ci" customClass="ActivityCardView" customModule="AdventureClub" customModuleProvider="target">
+                                <rect key="frame" x="20" y="77" width="560" height="362"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ndl-k4-k3y">
+                                        <rect key="frame" x="291" y="14" width="256" height="334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="441" translatesAutoresizingMaskIntoConstraints="NO" id="0v8-yQ-4sW">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D23-GQ-SDk">
+                                                <rect key="frame" x="0.0" y="36" width="256" height="256"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUV-yG-nw5">
+                                                <rect key="frame" x="0.0" y="292" width="256" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="End Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMw-HN-dqG">
+                                                <rect key="frame" x="0.0" y="313" width="256" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jal-bt-8VU">
+                                        <rect key="frame" x="8" y="14" width="256" height="334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoB-aB-BDd">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="240" verticalHuggingPriority="240" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" ambiguous="YES" preservesSuperviewLayoutMargins="YES" image="Soccer_Ball" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-gW-yyN">
+                                                <rect key="frame" x="0.0" y="36" width="256" height="256"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColour">
+                                                        <color key="value" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRounding">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="customImage" value="Matches"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-j9-wqy" customClass="LabelStyle" customModule="AdventureClub" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="292" width="256" height="21"/>
+                                                <color key="backgroundColor" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRounding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="BorderColour">
+                                                        <color key="value" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="End Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9T-YT-Pj7">
+                                                <rect key="frame" x="0.0" y="313" width="256" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                        <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="low-Fw-LNe" userLabel="Selection Stack View">
                                 <rect key="frame" x="20" y="447" width="560" height="96"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="vFv-lY-955">
@@ -549,22 +643,20 @@
                                         <rect key="frame" x="287" y="0.0" width="273" height="96"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="96" id="fz3-3z-T0Y"/>
-                                            <constraint firstAttribute="width" constant="96" id="lmM-jN-Raj"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="lmM-jN-Raj"/>
-                                            </mask>
-                                        </variation>
                                     </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="F91-1o-8Ci" firstAttribute="top" secondItem="Wwz-Nj-pie" secondAttribute="bottom" constant="13" id="1eu-aT-zwU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="low-Fw-LNe" secondAttribute="trailing" id="3va-vc-cD8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="F91-1o-8Ci" secondAttribute="leading" id="CrJ-Id-yxc"/>
                             <constraint firstItem="2AE-Yj-nMc" firstAttribute="top" secondItem="low-Fw-LNe" secondAttribute="bottom" constant="8" id="Cxt-H2-6hu"/>
                             <constraint firstItem="low-Fw-LNe" firstAttribute="leading" secondItem="4dB-Nc-eeo" secondAttribute="leadingMargin" id="NOB-Bu-rlH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F91-1o-8Ci" secondAttribute="trailing" id="cxL-4q-Cqd"/>
+                            <constraint firstItem="low-Fw-LNe" firstAttribute="top" secondItem="F91-1o-8Ci" secondAttribute="bottom" constant="8" symbolic="YES" id="ffg-G5-Dxv"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
@@ -789,6 +881,7 @@
     </scenes>
     <resources>
         <image name="Matches" width="37" height="37"/>
+        <image name="Soccer_Ball" width="256" height="256"/>
         <image name="activities Icon" width="23" height="25"/>
         <image name="buddies" width="35" height="35"/>
         <image name="checkmark" width="251" height="250"/>

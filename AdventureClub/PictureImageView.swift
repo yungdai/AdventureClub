@@ -1,5 +1,5 @@
 //
-//  PersonImageView.swift
+//  PictureImageView.swift
 //  BuddyUp
 //
 //  Created by Yung Dai on 2015-06-21.
@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable class PictureImageView: UIImageView {
     
 
-    @IBInspectable var cornerRounding: CGFloat = 0 {
+    @IBInspectable var cornerRounding: CGFloat = 50{
         didSet {
             layer.cornerRadius = cornerRounding
             
