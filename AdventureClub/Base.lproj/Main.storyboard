@@ -238,6 +238,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+                                        </variation>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-vx-dsw">
                                         <rect key="frame" x="0.0" y="62" width="560" height="52"/>
@@ -272,6 +275,9 @@
                                                         <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
+                                                </variation>
                                             </view>
                                             <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-Oi-41n" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
                                                 <rect key="frame" x="285" y="0.0" width="275" height="52"/>
@@ -303,8 +309,14 @@
                                                         <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="185" y="0.0" width="175" height="50"/>
+                                                </variation>
                                             </view>
                                         </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="60" width="360" height="50"/>
+                                        </variation>
                                     </stackView>
                                     <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-PM-qk4" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="124" width="560" height="52"/>
@@ -337,6 +349,9 @@
                                                 <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="120" width="360" height="50"/>
+                                        </variation>
                                     </view>
                                     <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-NF-czA" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="186" width="560" height="52"/>
@@ -369,6 +384,9 @@
                                                 <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="180" width="360" height="50"/>
+                                        </variation>
                                     </view>
                                     <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8x-uj-vpU" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="248" width="560" height="52"/>
@@ -401,6 +419,9 @@
                                                 <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="240" width="360" height="50"/>
+                                        </variation>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppt-ru-BNf" customClass="ButtonStyle" customModule="AdventureClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="310" width="560" height="30"/>
@@ -416,11 +437,17 @@
                                                 <color key="value" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="300" width="360" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="createAccountButtonPressed:" destination="g3s-db-nLo" eventType="touchUpInside" id="kPJ-o0-HGP"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="136" width="360" height="330"/>
+                                </variation>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignUp!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iK2-Dw-2LR">
                                 <rect key="frame" x="20" y="72" width="560" height="21"/>
@@ -545,7 +572,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoB-aB-BDd">
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="144" height="0.0"/>
@@ -593,7 +620,7 @@
                                                     <rect key="frame" x="0.0" y="167" width="144" height="0.0"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9T-YT-Pj7">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9T-YT-Pj7">
                                                 <rect key="frame" x="0.0" y="317" width="224" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -618,7 +645,7 @@
                                                     <constraint firstAttribute="height" constant="207" id="ZCg-7W-P6M"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -661,7 +688,7 @@
                                                     <rect key="frame" x="0.0" y="217" width="144" height="139"/>
                                                 </variation>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-Ia-l3q" customClass="LabelStyle" customModule="AdventureClub" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-Ia-l3q" customClass="LabelStyle" customModule="AdventureClub" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="286" width="224" height="21"/>
                                                 <color key="backgroundColor" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -707,8 +734,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="rL1-cv-7LU">
                                         <rect key="frame" x="264" y="170" width="33" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="164" y="172" width="33" height="21"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -744,40 +774,16 @@
                                         <exclude reference="zcl-Rv-TYH"/>
                                     </mask>
                                 </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="77" width="360" height="366"/>
+                                </variation>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="low-Fw-LNe" userLabel="Selection Stack View">
-                                <rect key="frame" x="20" y="451" width="560" height="92"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="vFv-lY-955">
-                                        <rect key="frame" x="0.0" y="0.0" width="274" height="92"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="96" id="MzP-Oo-ZfK"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="RHd-4K-tAA"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="SLS-hN-mHQ">
-                                        <rect key="frame" x="287" y="0.0" width="273" height="92"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="fz3-3z-T0Y"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="SLS-hN-mHQ" firstAttribute="bottom" secondItem="vFv-lY-955" secondAttribute="bottom" id="mwh-3l-WIp"/>
-                                    <constraint firstItem="SLS-hN-mHQ" firstAttribute="top" secondItem="vFv-lY-955" secondAttribute="top" id="nZ4-BJ-Wty"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="F91-1o-8Ci" firstAttribute="top" secondItem="Wwz-Nj-pie" secondAttribute="bottom" constant="13" id="1eu-aT-zwU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="low-Fw-LNe" secondAttribute="trailing" id="3va-vc-cD8"/>
                             <constraint firstAttribute="leadingMargin" secondItem="F91-1o-8Ci" secondAttribute="leading" id="CrJ-Id-yxc"/>
-                            <constraint firstItem="2AE-Yj-nMc" firstAttribute="top" secondItem="low-Fw-LNe" secondAttribute="bottom" constant="8" id="Cxt-H2-6hu"/>
-                            <constraint firstItem="low-Fw-LNe" firstAttribute="leading" secondItem="4dB-Nc-eeo" secondAttribute="leadingMargin" id="NOB-Bu-rlH"/>
-                            <constraint firstItem="low-Fw-LNe" firstAttribute="height" secondItem="F91-1o-8Ci" secondAttribute="height" multiplier="0.25" id="T7o-oJ-734"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F91-1o-8Ci" secondAttribute="trailing" id="cxL-4q-Cqd"/>
-                            <constraint firstItem="low-Fw-LNe" firstAttribute="top" secondItem="F91-1o-8Ci" secondAttribute="bottom" constant="8" symbolic="YES" id="ffg-G5-Dxv"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
@@ -792,6 +798,14 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Let's....." id="kVV-40-oBB"/>
+                    <connections>
+                        <outlet property="activityTypeImage" destination="Hph-gW-yyN" id="fx7-5i-qpJ"/>
+                        <outlet property="activityTypeLabelText" destination="ZoB-aB-BDd" id="0NY-ze-NoD"/>
+                        <outlet property="endTimeLabelText" destination="OKw-0J-zFF" id="lPU-By-1GE"/>
+                        <outlet property="personImage" destination="NbU-CM-gzd" id="p8T-er-T3Z"/>
+                        <outlet property="personLabelText" destination="13T-CV-oM9" id="UH6-ig-dw3"/>
+                        <outlet property="startTimeLabelText" destination="D9T-YT-Pj7" id="nlV-Gx-30Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjq-FI-8yC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1005,8 +1019,6 @@
         <image name="Soccer_Ball" width="256" height="256"/>
         <image name="activities Icon" width="23" height="25"/>
         <image name="buddies" width="35" height="35"/>
-        <image name="checkmark" width="251" height="250"/>
-        <image name="cross" width="251" height="250"/>
         <image name="facebook" width="202" height="46"/>
         <image name="icon_lock" width="12" height="17"/>
         <image name="icon_user" width="16" height="16"/>

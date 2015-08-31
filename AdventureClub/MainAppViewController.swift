@@ -14,14 +14,15 @@ class MainAppViewController: UIViewController{
     let iPhoneImageDimension:CGFloat = 100.0
     let iPadImageDimension:CGFloat = 145.0
     
-    @IBOutlet var personImage: UIImageView!
-    @IBOutlet var personLabelText: UILabel!
-    @IBOutlet var activityTypeLabelText: UILabel!
-    @IBOutlet var startTimeLabelText: UILabel!
-    @IBOutlet var endTimeLabelText: UILabel!
-    @IBOutlet var activityTypeImage: UIImageView!
-    @IBOutlet var checkButton: UIButton!
-    @IBOutlet var crossButton: UIButton!
+    @IBOutlet weak var personImage: UIImageView!
+    @IBOutlet weak var personLabelText: UILabel!
+    @IBOutlet weak var activityTypeLabelText: UILabel!
+    @IBOutlet weak var startTimeLabelText: UILabel!
+    @IBOutlet weak var endTimeLabelText: UILabel!
+    @IBOutlet weak var activityTypeImage: UIImageView!
+    @IBOutlet weak var checkButton: UIButton!
+    @IBOutlet weak var crossButton: UIButton!
+
     @IBOutlet var activityCardBackground: ActivityCardView!
     var currentActivityIndex = -1
     // activities parse object
