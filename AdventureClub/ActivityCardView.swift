@@ -25,17 +25,9 @@ import UIKit
         }
     }
     
-    @IBInspectable var StartColor: UIColor = UIColor.whiteColor() {
-        didSet{
-            setupView()
-        }
-    }
+    @IBInspectable var StartColor: UIColor = UIColor.whiteColor()
     
-    @IBInspectable var EndColor: UIColor = UIColor.blackColor() {
-        didSet{
-            setupView()
-        }
-    }
+    @IBInspectable var EndColor: UIColor = UIColor.blackColor()
     
     
     

@@ -24,31 +24,15 @@ import UIKit
         }
     }
     
-    @IBInspectable var StartColor: UIColor = UIColor.whiteColor() {
-        didSet{
-            setupView()
-        }
-    }
-    
-    @IBInspectable var EndColor: UIColor = UIColor.blackColor() {
-        didSet{
-            setupView()
-        }
-    }
-    
-
-    
+    @IBInspectable var StartColor: UIColor = UIColor.whiteColor()
+    @IBInspectable var EndColor: UIColor = UIColor.blackColor()
     @IBInspectable var isHorizontal: Bool = false {
         didSet{
             setupView()
         }
     }
     
-    @IBInspectable var roundness: CGFloat = 0.0 {
-        didSet{
-            setupView()
-        }
-    }
+    @IBInspectable var roundness: CGFloat = 10.0
     
     // MARK: Internal functions *********************************
     
@@ -59,6 +43,7 @@ import UIKit
             let colors:Array = [StartColor.CGColor, EndColor.CGColor]
             gradientLayer.colors = colors
             gradientLayer.cornerRadius = roundness
+            self.setNeedsDisplay()
         }
 
         
@@ -68,7 +53,7 @@ import UIKit
             gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         }
         
-        self.setNeedsDisplay()
+        
         
     }
     
@@ -96,7 +81,7 @@ import UIKit
     
     func viewStyle() {
     backgroundColor = viewColour
-        
+        setupView()
     }
 
 

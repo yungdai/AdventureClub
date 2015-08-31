@@ -20,19 +20,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aBo-2k-RRw">
-                                <rect key="frame" x="8" y="134" width="584" height="271"/>
+                                <rect key="frame" x="8" y="134" width="584" height="269"/>
                                 <subviews>
-                                    <view alpha="0.75" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-mH-Oce" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="584" height="52"/>
+                                    <view alpha="0.75" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-mH-Oce" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="51"/>
                                         <subviews>
-                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="Vbe-61-Z8e">
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_user" translatesAutoresizingMaskIntoConstraints="NO" id="Vbe-61-Z8e">
                                                 <rect key="frame" x="8" y="9" width="35" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Vbe-61-Z8e" secondAttribute="height" multiplier="1:1" id="2xm-gl-P9u"/>
                                                     <constraint firstAttribute="height" constant="35" id="OsG-Vg-WWg"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWI-zy-Iya">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWI-zy-Iya">
                                                 <rect key="frame" x="51" y="9" width="531" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -50,25 +50,20 @@
                                             <constraint firstItem="QWI-zy-Iya" firstAttribute="leading" secondItem="Vbe-61-Z8e" secondAttribute="trailing" constant="8" symbolic="YES" id="sv5-Lw-3wu"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                <color key="value" red="0.82745098039215681" green="0.72941176470588232" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                <color key="value" red="0.19215686274509802" green="0.38823529411764707" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                 <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
-                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
                                                 <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
+                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3a-vA-mFu" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="60" width="584" height="52"/>
+                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3a-vA-mFu" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="59" width="584" height="51"/>
                                         <subviews>
                                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_lock" translatesAutoresizingMaskIntoConstraints="NO" id="AUR-iz-CnQ">
                                                 <rect key="frame" x="8" y="8" width="35" height="35"/>
@@ -96,12 +91,6 @@
                                             <constraint firstItem="iCL-sR-cg6" firstAttribute="top" secondItem="AUR-iz-CnQ" secondAttribute="top" id="sZ6-Kv-fL8"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                <color key="value" red="0.82716632088486675" green="0.72803585338978993" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                <color key="value" red="0.19087809667648425" green="0.38666583035394475" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
@@ -111,10 +100,11 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
                                                 <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHd-k0-tfT" customClass="ButtonStyle" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="120" width="584" height="30"/>
+                                        <rect key="frame" x="0.0" y="118" width="584" height="30"/>
                                         <state key="normal" title="Login"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRounding">
@@ -132,13 +122,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tU-CO-bar">
-                                        <rect key="frame" x="0.0" y="158" width="584" height="21"/>
+                                        <rect key="frame" x="0.0" y="156" width="584" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZY-bb-Umx" customClass="ButtonStyle" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="187" width="584" height="30"/>
+                                        <rect key="frame" x="0.0" y="185" width="584" height="30"/>
                                         <state key="normal" title="Sign Up"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="BorderColour">
@@ -157,7 +147,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-UU-BBg">
-                                        <rect key="frame" x="0.0" y="225" width="584" height="46"/>
+                                        <rect key="frame" x="0.0" y="223" width="584" height="46"/>
                                         <state key="normal" image="facebook"/>
                                         <connections>
                                             <action selector="facebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Viu-Sj-HfU"/>
@@ -210,11 +200,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-iy-vZE">
-                                <rect key="frame" x="20" y="136" width="560" height="340"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignUp!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iK2-Dw-2LR">
+                                <rect key="frame" x="20" y="72" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Cbh-if-PWN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="jas-xg-6LS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-iy-vZE">
+                                <rect key="frame" x="20" y="136" width="560" height="336"/>
                                 <subviews>
-                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28i-2U-NPT" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="52"/>
+                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28i-2U-NPT" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="50"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hc-Iw-8lx">
                                                 <rect key="frame" x="8" y="11" width="544" height="30"/>
@@ -242,14 +242,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
                                         </variation>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-vx-dsw">
-                                        <rect key="frame" x="0.0" y="62" width="560" height="52"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-vx-dsw">
+                                        <rect key="frame" x="0.0" y="60" width="560" height="52"/>
                                         <subviews>
-                                            <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-br-Bd7" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
+                                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-br-Bd7" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="52"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fw-aF-019">
-                                                        <rect key="frame" x="8" y="11" width="262" height="30"/>
+                                                        <rect key="frame" x="6" y="11" width="262" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -259,27 +259,19 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
-                                                        <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                        <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                        <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
                                                         <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
                                                         <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <variation key="widthClass=compact" misplaced="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
                                                 </variation>
                                             </view>
-                                            <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-Oi-41n" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
+                                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-Oi-41n" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
                                                 <rect key="frame" x="285" y="0.0" width="275" height="52"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-TK-p5h">
@@ -296,18 +288,13 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
                                                         <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                        <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                        <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
                                                         <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
                                                         <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <variation key="widthClass=compact" misplaced="YES">
                                                     <rect key="frame" x="185" y="0.0" width="175" height="50"/>
@@ -318,8 +305,8 @@
                                             <rect key="frame" x="0.0" y="60" width="360" height="50"/>
                                         </variation>
                                     </stackView>
-                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-PM-qk4" customClass="TextInputBackgound" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="124" width="560" height="52"/>
+                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-PM-qk4" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="122" width="560" height="52"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2j-U8-Lec">
                                                 <rect key="frame" x="8" y="11" width="544" height="30"/>
@@ -329,21 +316,9 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
-                                                <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
-                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="1" green="0.78584278510000005" blue="0.86149269500000003" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
                                                 <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -353,8 +328,8 @@
                                             <rect key="frame" x="0.0" y="120" width="360" height="50"/>
                                         </variation>
                                     </view>
-                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-NF-czA" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="186" width="560" height="52"/>
+                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-NF-czA" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="184" width="560" height="52"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXX-Wz-3hJ">
                                                 <rect key="frame" x="8" y="11" width="544" height="30"/>
@@ -364,18 +339,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
-                                                <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
                                                 <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -383,13 +346,16 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
                                                 <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="180" width="360" height="50"/>
                                         </variation>
                                     </view>
-                                    <view alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8x-uj-vpU" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="248" width="560" height="52"/>
+                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8x-uj-vpU" customClass="BackgroundView" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="246" width="560" height="50"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password Confirmation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XZ-CA-Gxi">
                                                 <rect key="frame" x="8" y="11" width="544" height="30"/>
@@ -402,29 +368,23 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="viewColour">
                                                 <color key="value" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
-                                                <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
-                                                <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="roundness">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="StartColor">
                                                 <color key="value" red="0.82745098039999998" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="EndColor">
                                                 <color key="value" red="0.19215686269999999" green="0.38823529410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useGradient" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="240" width="360" height="50"/>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppt-ru-BNf" customClass="ButtonStyle" customModule="AdventureClub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="310" width="560" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppt-ru-BNf" customClass="ButtonStyle" customModule="AdventureClub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="306" width="560" height="30"/>
                                         <state key="normal" title="Create Account"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="BorderWidth">
@@ -445,31 +405,28 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Pem-PM-qk4" firstAttribute="top" secondItem="gcE-iy-vZE" secondAttribute="top" constant="122" id="3vJ-Ld-R1g"/>
+                                    <constraint firstAttribute="height" constant="336" id="MtL-Xn-XPx"/>
+                                    <constraint firstAttribute="width" constant="560" id="NRS-aD-Nnp"/>
+                                    <constraint firstItem="ZXb-vx-dsw" firstAttribute="top" secondItem="gcE-iy-vZE" secondAttribute="top" constant="60" id="QnJ-N4-59G"/>
+                                    <constraint firstItem="fTd-NF-czA" firstAttribute="top" secondItem="gcE-iy-vZE" secondAttribute="top" constant="184" id="T9c-UZ-bqH"/>
+                                    <constraint firstItem="E8x-uj-vpU" firstAttribute="top" secondItem="gcE-iy-vZE" secondAttribute="top" constant="246" id="wMC-NS-fSk"/>
+                                    <constraint firstItem="ZXb-vx-dsw" firstAttribute="top" secondItem="28i-2U-NPT" secondAttribute="bottom" constant="10" id="z71-bd-NAq"/>
+                                </constraints>
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="20" y="136" width="360" height="330"/>
                                 </variation>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignUp!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iK2-Dw-2LR">
-                                <rect key="frame" x="20" y="72" width="560" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Cbh-if-PWN"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="jas-xg-6LS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94151189869999996" blue="0.9507357864" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="gcE-iy-vZE" secondAttribute="leading" id="1Cm-2Q-3GM"/>
-                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TqA-2n-11p" secondAttribute="bottom" constant="5" id="G0d-0R-ziT"/>
-                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="trailing" secondItem="gcE-iy-vZE" secondAttribute="trailing" id="LJa-7m-IoS"/>
-                            <constraint firstItem="gcE-iy-vZE" firstAttribute="centerX" secondItem="zJZ-td-gEq" secondAttribute="centerX" id="Xt9-UC-Rql"/>
-                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="leading" secondItem="gcE-iy-vZE" secondAttribute="leading" id="eVr-G6-2TN"/>
-                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="top" secondItem="TqA-2n-11p" secondAttribute="bottom" constant="8" symbolic="YES" id="sza-MB-gSy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gcE-iy-vZE" secondAttribute="trailing" id="tHs-lB-ETr"/>
-                            <constraint firstItem="gcE-iy-vZE" firstAttribute="top" secondItem="iK2-Dw-2LR" secondAttribute="bottom" constant="43" id="vbi-8C-ZbU"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="leading" secondItem="zJZ-td-gEq" secondAttribute="leadingMargin" id="CSS-E8-FWZ"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="trailing" secondItem="gcE-iy-vZE" secondAttribute="trailing" id="Ux1-0C-1uJ"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="leading" secondItem="gcE-iy-vZE" secondAttribute="leading" id="b6C-ze-SUt"/>
+                            <constraint firstItem="gcE-iy-vZE" firstAttribute="top" secondItem="iK2-Dw-2LR" secondAttribute="bottom" constant="43" id="ejk-J9-nbt"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="trailing" secondItem="zJZ-td-gEq" secondAttribute="trailingMargin" id="ell-ud-4KL"/>
+                            <constraint firstItem="iK2-Dw-2LR" firstAttribute="top" secondItem="TqA-2n-11p" secondAttribute="bottom" constant="8" id="xHp-gc-64V"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -493,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EC1-aW-8cY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="-1427"/>
+            <point key="canvasLocation" x="879" y="-1427"/>
         </scene>
         <!--Activities Table View Controller-->
         <scene sceneID="zfP-1W-IT4">
@@ -508,7 +465,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uwK-Jp-PRR" id="dTJ-PY-V33">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -579,7 +536,7 @@
                                                 </variation>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="240" verticalHuggingPriority="240" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" preservesSuperviewLayoutMargins="YES" image="Soccer_Ball" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-gW-yyN" customClass="PictureImageView" customModule="AdventureClub" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="46" width="224" height="230"/>
+                                                <rect key="frame" x="0.0" y="46" width="224" height="231"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Hph-gW-yyN" secondAttribute="height" multiplier="112:115" id="5dc-qy-CCw"/>
                                                 </constraints>
@@ -600,7 +557,7 @@
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-j9-wqy" customClass="LabelStyle" customModule="AdventureClub" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="286" width="224" height="21"/>
+                                                <rect key="frame" x="0.0" y="287" width="224" height="21"/>
                                                 <color key="backgroundColor" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -621,7 +578,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9T-YT-Pj7">
-                                                <rect key="frame" x="0.0" y="317" width="224" height="21"/>
+                                                <rect key="frame" x="0.0" y="318" width="224" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -640,7 +597,7 @@
                                         <rect key="frame" x="322" y="12" width="224" height="338"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13T-CV-oM9">
-                                                <rect key="frame" x="0.0" y="0.0" width="224" height="47"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="224" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="207" id="ZCg-7W-P6M"/>
                                                 </constraints>
@@ -665,7 +622,7 @@
                                                 </variation>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" preservesSuperviewLayoutMargins="YES" image="watchTV" translatesAutoresizingMaskIntoConstraints="NO" id="NbU-CM-gzd" customClass="PictureImageView" customModule="AdventureClub" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="57" width="224" height="219"/>
+                                                <rect key="frame" x="0.0" y="58" width="224" height="219"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NbU-CM-gzd" secondAttribute="height" multiplier="1:1" constant="5" id="nLv-aO-tK3"/>
                                                 </constraints>
@@ -689,7 +646,7 @@
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-Ia-l3q" customClass="LabelStyle" customModule="AdventureClub" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="286" width="224" height="21"/>
+                                                <rect key="frame" x="0.0" y="287" width="224" height="21"/>
                                                 <color key="backgroundColor" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.99056603769999996" green="0.99056603769999996" blue="0.99056603769999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -713,7 +670,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKw-0J-zFF">
-                                                <rect key="frame" x="0.0" y="317" width="224" height="21"/>
+                                                <rect key="frame" x="0.0" y="318" width="224" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.2005443335" green="0.1191722756" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -815,6 +772,7 @@
         <scene sceneID="gez-Jl-on9">
             <objects>
                 <tabBarController title="AdventureClubMain" id="et5-8q-WfA" userLabel="AdventureClub Bar Controller" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="QkE-bf-DUN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -831,7 +789,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K3a-01-OMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655" y="-1427"/>
+            <point key="canvasLocation" x="1712" y="-1460"/>
         </scene>
         <!--Activities-->
         <scene sceneID="MOC-Yp-Nly">
@@ -865,7 +823,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JZM-kd-Cr3" id="Xzj-Js-Y2w">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -894,7 +852,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B82-Wp-Z8s" id="ZQq-PL-toT">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -923,7 +881,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="77X-eV-554" id="rMA-BY-hDY">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

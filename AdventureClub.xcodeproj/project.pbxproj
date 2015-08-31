@@ -58,7 +58,6 @@
 		1A0BD66A1B926A6000B61C07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */; };
 		1A0BD66E1B926A8300B61C07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */; };
 		1A0BD6701B926A9000B61C07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */; };
-		1A352CCD1B938711001A2573 /* TextInputBackgound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A352CCC1B938711001A2573 /* TextInputBackgound.swift */; settings = {ASSET_TAGS = (); }; };
 		1A5709461B929D6E00755EDF /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5709451B929D6E00755EDF /* libstdc++.6.tbd */; };
 		1A5709481B929D8500755EDF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5709471B929D8500755EDF /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
@@ -138,7 +137,6 @@
 		1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1A352CCC1B938711001A2573 /* TextInputBackgound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputBackgound.swift; sourceTree = "<group>"; };
 		1A5709441B929AD700755EDF /* AdventureClub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdventureClub-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A5709451B929D6E00755EDF /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		1A5709471B929D8500755EDF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -187,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0BD5D31B925C6900B61C07 /* AdventureClub */,
+				1A0BD64A1B92648B00B61C07 /* ViewControllers */,
 				1A0BD5E81B925C6A00B61C07 /* AdventureClubTests */,
 				1A0BD5F31B925C6A00B61C07 /* AdventureClubUITests */,
 				1A0BD5D21B925C6900B61C07 /* Products */,
@@ -267,7 +266,6 @@
 				1A0BD6481B92631F00B61C07 /* PopUp Pickers */,
 				1A0BD6471B92630E00B61C07 /* Activities */,
 				1A0BD6461B9262FF00B61C07 /* Element and Design Styling */,
-				1A0BD64A1B92648B00B61C07 /* ViewControllers */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -276,7 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				1A0BD6101B925D2C00B61C07 /* BackgroundView.swift */,
-				1A352CCC1B938711001A2573 /* TextInputBackgound.swift */,
 				1A0BD6051B925D1300B61C07 /* ActivityCardView.swift */,
 				1A0BD6251B925D5500B61C07 /* LabelStyle.swift */,
 				1A0BD62D1B925D5500B61C07 /* PictureImageView.swift */,
@@ -326,6 +323,7 @@
 				1A0BD64B1B92649D00B61C07 /* Main App */,
 			);
 			name = ViewControllers;
+			path = AdventureClub;
 			sourceTree = "<group>";
 		};
 		1A0BD64B1B92649D00B61C07 /* Main App */ = {
@@ -559,7 +557,6 @@
 				1A0BD61D1B925D4300B61C07 /* ButtonStyle.swift in Sources */,
 				1A0BD6241B925D4300B61C07 /* ImageAsyncFromURL.swift in Sources */,
 				1A0BD63F1B925D5500B61C07 /* SignUpViewController.swift in Sources */,
-				1A352CCD1B938711001A2573 /* TextInputBackgound.swift in Sources */,
 				1A0BD61E1B925D4300B61C07 /* ChatViewController.swift in Sources */,
 				1A0BD6341B925D5500B61C07 /* LabelStyle.swift in Sources */,
 				1A0BD63D1B925D5500B61C07 /* SearchTableViewController.swift in Sources */,
