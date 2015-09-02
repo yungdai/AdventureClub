@@ -75,9 +75,6 @@ class MainAppViewController: UIViewController{
 
     var frame: CGRect!
     var xFromCenter: CGFloat = 0
-    
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,25 +120,28 @@ class MainAppViewController: UIViewController{
     
     func getActivites() {
         // get all Activity Objects that aren't yours
-        let query = PFQuery(className: "Activity")
-        query.whereKey("creator", notEqualTo: PFUser.currentUser()!.username!)
-        
-        
-        
-        // getting the data asynchronusly in the background
-        query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
+        if let query: PFQuery = PFQuery(className: "Activity") {
+            query.whereKey("creator", notEqualTo: PFUser.currentUser()!.username!)
             
-            if (error != nil) {
+            // getting the data asynchronusly in the background
+            query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
                 
-            } else {
-                return
+                if (error != nil) {
+                    
+                } else {
+                    return
+                }
+                
+                if let fetchedActivities = result as? [PFObject] {
+                    self.activities = fetchedActivities
+                    self.styleForNextActivity()
+                }
             }
             
-            if let fetchedActivities = result as? [PFObject] {
-                self.activities = fetchedActivities
-                self.styleForNextActivity()
-            }
+        } else {
+            print("There are no activiteis")
         }
+        
     }
     
     
