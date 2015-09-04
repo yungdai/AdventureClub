@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A0BD5D51B925C6A00B61C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD5D41B925C6A00B61C07 /* AppDelegate.swift */; };
+		1A0BD5D71B925C6A00B61C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BD5D61B925C6A00B61C07 /* ViewController.swift */; };
 		1A0BD5DA1B925C6A00B61C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD5D81B925C6A00B61C07 /* Main.storyboard */; };
 		1A0BD5DC1B925C6A00B61C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD5DB1B925C6A00B61C07 /* Assets.xcassets */; };
 		1A0BD5DF1B925C6A00B61C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BD5DD1B925C6A00B61C07 /* LaunchScreen.storyboard */; };
@@ -57,7 +58,6 @@
 		1A0BD66A1B926A6000B61C07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */; };
 		1A0BD66E1B926A8300B61C07 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */; };
 		1A0BD6701B926A9000B61C07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */; };
-		1A3603E51B9A26B000D24309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3603E41B9A26B000D24309 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1A5709461B929D6E00755EDF /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5709451B929D6E00755EDF /* libstdc++.6.tbd */; };
 		1A5709481B929D8500755EDF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5709471B929D8500755EDF /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
@@ -82,6 +82,7 @@
 /* Begin PBXFileReference section */
 		1A0BD5D11B925C6900B61C07 /* AdventureClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventureClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0BD5D41B925C6A00B61C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A0BD5D61B925C6A00B61C07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A0BD5D91B925C6A00B61C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A0BD5DB1B925C6A00B61C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A0BD5DE1B925C6A00B61C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,7 +137,6 @@
 		1A0BD6691B926A6000B61C07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1A0BD66D1B926A8300B61C07 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1A0BD66F1B926A9000B61C07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1A3603E41B9A26B000D24309 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A5709441B929AD700755EDF /* AdventureClub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdventureClub-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A5709451B929D6E00755EDF /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		1A5709471B929D8500755EDF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -185,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0BD5D31B925C6900B61C07 /* AdventureClub */,
+				1A0BD64A1B92648B00B61C07 /* ViewControllers */,
 				1A0BD5E81B925C6A00B61C07 /* AdventureClubTests */,
 				1A0BD5F31B925C6A00B61C07 /* AdventureClubUITests */,
 				1A0BD5D21B925C6900B61C07 /* Products */,
@@ -206,8 +207,8 @@
 			children = (
 				1A0BD6431B925D6200B61C07 /* Frameworks */,
 				1A0BD6441B9262D800B61C07 /* Models */,
-				1A0BD64A1B92648B00B61C07 /* ViewControllers */,
 				1A0BD5D41B925C6A00B61C07 /* AppDelegate.swift */,
+				1A0BD5D61B925C6A00B61C07 /* ViewController.swift */,
 				1A5709441B929AD700755EDF /* AdventureClub-Bridging-Header.h */,
 				1A0BD5D81B925C6A00B61C07 /* Main.storyboard */,
 				1A0BD5DB1B925C6A00B61C07 /* Assets.xcassets */,
@@ -322,6 +323,7 @@
 				1A0BD64B1B92649D00B61C07 /* Main App */,
 			);
 			name = ViewControllers;
+			path = AdventureClub;
 			sourceTree = "<group>";
 		};
 		1A0BD64B1B92649D00B61C07 /* Main App */ = {
@@ -331,7 +333,6 @@
 				1A0BD6281B925D5500B61C07 /* MatchesTableViewController.swift */,
 				1A0BD6121B925D4300B61C07 /* BuddiesTableViewController.swift */,
 				1A0BD6151B925D4300B61C07 /* ChatViewController.swift */,
-				1A3603E41B9A26B000D24309 /* ViewController.swift */,
 			);
 			name = "Main App";
 			sourceTree = "<group>";
@@ -542,6 +543,7 @@
 				1A0BD6351B925D5500B61C07 /* LoginViewController.swift in Sources */,
 				1A0BD6201B925D4300B61C07 /* DatePickerPopUp.swift in Sources */,
 				1A0BD61C1B925D4300B61C07 /* BuddiesTableViewController.swift in Sources */,
+				1A0BD5D71B925C6A00B61C07 /* ViewController.swift in Sources */,
 				1A0BD6401B925D5500B61C07 /* SplashScreen.swift in Sources */,
 				1A0BD6381B925D5500B61C07 /* NewActivityViewController.swift in Sources */,
 				1A0BD61F1B925D4300B61C07 /* DateFormat.swift in Sources */,
@@ -553,7 +555,6 @@
 				1A0BD63E1B925D5500B61C07 /* SettingsTableViewController.swift in Sources */,
 				1A0BD6221B925D4300B61C07 /* DatePickerViewController.swift in Sources */,
 				1A0BD63A1B925D5500B61C07 /* PickerViewPickerPopUp.swift in Sources */,
-				1A3603E51B9A26B000D24309 /* ViewController.swift in Sources */,
 				1A0BD61D1B925D4300B61C07 /* ButtonStyle.swift in Sources */,
 				1A0BD6241B925D4300B61C07 /* ImageAsyncFromURL.swift in Sources */,
 				1A0BD63F1B925D5500B61C07 /* SignUpViewController.swift in Sources */,

@@ -8,14 +8,12 @@
 
 import UIKit
 
-class MainAppViewController: UIViewController {
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+class MainAppViewController: UIViewController{
     
     let currentUser = PFUser.currentUser()
-
+    let iPhoneImageDimension:CGFloat = 100.0
+    let iPadImageDimension:CGFloat = 145.0
+    
     @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var personLabelText: UILabel!
     @IBOutlet weak var activityTypeLabelText: UILabel!
@@ -24,20 +22,15 @@ class MainAppViewController: UIViewController {
     @IBOutlet weak var activityTypeImage: UIImageView!
     @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var crossButton: UIButton!
-    
-    // Bar button items
-    var signInButtonIsVisible: Bool = true
-    var signInButton: UIBarButtonItem!
-    
-    // Possible ViewControllers
-    let loginViewController: LoginViewController!
-    
+
     @IBOutlet var activityCardBackground: ActivityCardView!
     var currentActivityIndex = -1
     // activities parse object
-    var activities: [PFObject]? = []
+    var activities: [PFObject]?
     var currentUserID: String?
     
+    // like boolean
+
     
     // location setup
     var currentLocation: PFGeoPoint?
@@ -53,6 +46,7 @@ class MainAppViewController: UIViewController {
     }
     
     var cardSelectionState: CardSelectionState = .NoSelection
+    
     
     // activity picture
     // TODO do fast enum based on the picture
@@ -81,87 +75,48 @@ class MainAppViewController: UIViewController {
 
     var frame: CGRect!
     var xFromCenter: CGFloat = 0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // some setup 
+        // get the current location and sent to Parse
+        PFGeoPoint.geoPointForCurrentLocationInBackground { (geoPoint:PFGeoPoint?, error:NSError?) -> Void in if let user = PFUser.currentUser() {
+            if (error != nil) {
+                
+            }
+            self.currentLocation = geoPoint
+            if let currentLocation = self.currentLocation {
+                
+            }
+                        user["currentLocation"] = geoPoint
+                        user.saveInBackground()
+            }
+            
+        }
+
         frame = CGRectZero
         
-        // check to see if the user is signed in or not
-        if PFUser.currentUser()?.sessionToken != nil {
+        // get all Activity Objects that aren't yours
+        let query = PFQuery(className: "Activity")
+        query.includeKey("createdBy")
+        query.whereKey("createdBy", notEqualTo: PFUser.currentUser()!)
+        
+        
+        // getting the data asynchronusly in the background
+        query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
             
-            
-            
-            // some setup
-            // get the current location and sent to Parse
-            PFGeoPoint.geoPointForCurrentLocationInBackground { (geoPoint:PFGeoPoint?, error:NSError?) -> Void in if let user = PFUser.currentUser() {
-                if (error != nil) {
-                    
-                }
-                self.currentLocation = geoPoint
-                if let _ = self.currentLocation {
-                    
-                }
-                user["currentLocation"] = geoPoint
-                user.saveInBackground()
-                }
+            if (error != nil) {
                 
             }
             
-            // get all Activity Objects that aren't yours
-            if let query = PFQuery(className: "Activity") as PFQuery? {
-                query.includeKey("createdBy")
-                query.whereKey("createdBy", notEqualTo: PFUser.currentUser()!)
-                
-                // getting the data asynchronusly in the background
-                query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
-                    
-                    if (error != nil) {
-                        print(error)
-                        
-                    }
-                    
-                    if let fetchedActivities = result as? [PFObject] {
-                        self.activities = fetchedActivities
-//                        self.styleForNextActivity()
-                    }
-                }
-            } else {
-                //                    var query = PFQuery(className: "Activity")
-                //                    query.includeKey("createdBy")
-                //                    query.whereKey("createdBy", equalTo: PFUser(className: <#T##String#>))
-                
-                
+            if let fetchedActivities = result as? [PFObject] {
+                self.activities = fetchedActivities
+                self.styleForNextActivity()
             }
-
-
-            signInButton = UIBarButtonItem(title: "Sign In", style: UIBarButtonItemStyle.Plain, target: self, action: "login")
-            navigationItem.leftBarButtonItem = signInButton
-            
-        } else {
-
         }
-    }
-    
-    func login() {
-        
-        // Display sign in / up view controller
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = storyboard.instantiateViewControllerWithIdentifier("Login")
-        self.presentViewController(loginViewController, animated: true, completion: nil)
         
     }
-    
-    
-
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        presentViewController(loginViewController, animated: true, completion: nil)
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-
     
     func getActivites() {
         // get all Activity Objects that aren't yours
@@ -196,56 +151,56 @@ class MainAppViewController: UIViewController {
             if  currentActivityIndex >= currentActivities.count && currentActivities.count > 1 {
                 currentActivityIndex = 0
             }
-            
-            if let activity = currentActivities[currentActivityIndex] as PFObject? {
-                
-                let dateFormat = NSDateFormatter()
-                dateFormat.dateStyle = NSDateFormatterStyle.MediumStyle
-                dateFormat.timeStyle = NSDateFormatterStyle.ShortStyle
-                if let activityType = activity["activityType"] as? String {
-                    self.activityTypeLabelText.text = activityType
-                }
-                
-                if let startTime = activity["startTime"] as? NSDate {
-                    self.startTimeLabelText.text = dateFormat.stringFromDate(startTime)
-                }
-                
-                if let endTime = activity["endTime"] as? NSDate {
-                    self.endTimeLabelText.text = dateFormat.stringFromDate(endTime)
-                }
-                
-                if let creatorName = activity["name"] as? String {
-                    self.personLabelText.text = creatorName
-                }
-                
-                if let activityImage = activity["image"] as? PFFile {
-                    activityImage.getDataInBackgroundWithBlock({ (data, error: NSError?) -> Void in
-                        if (error != nil) {
-                            print(error)
-                            // TODO throw error message
-                            return
-                        }
-                        
-                        if let newData = data {
-                            self.activityTypeImage.image = UIImage(data: newData)
-                        }
-                        
-                    })
-                }
-                
-                if let activityOwner = activity["createdBy"]?.objectForKey("userImage") as? PFFile {
-                    activityOwner.getDataInBackgroundWithBlock({ (data, error: NSError?) -> Void in
-                        if (error != nil) {
-                            print(error)
-                            return
-                        }
-                        
-                        if let newData = data {
-                            self.personImage.image = UIImage(data: newData)
-                        }
-                    })
-                }
+            let activity = currentActivities[currentActivityIndex]
+            let dateFormat = NSDateFormatter()
+            dateFormat.dateStyle = NSDateFormatterStyle.MediumStyle
+            dateFormat.timeStyle = NSDateFormatterStyle.ShortStyle
+            if let activityType = activity["activityType"] as? String {
+                self.activityTypeLabelText.text = activityType
             }
+            
+            if let startTime = activity["startTime"] as? NSDate {
+                self.startTimeLabelText.text = dateFormat.stringFromDate(startTime)
+            }
+            
+            if let endTime = activity["endTime"] as? NSDate {
+                self.endTimeLabelText.text = dateFormat.stringFromDate(endTime)
+            }
+            
+            if let creatorName = activity["name"] as? String {
+                self.personLabelText.text = creatorName
+            }
+            
+            if let activityImage = activity["image"] as? PFFile {
+                activityImage.getDataInBackgroundWithBlock({ (data, error: NSError?) -> Void in
+                    if (error != nil) {
+                        print(error)
+                        // TODO throw error message
+                        return
+                    }
+                    
+                    if let newData = data {
+                        self.activityTypeImage.image = UIImage(data: newData)
+                    }
+                    
+                })
+            }
+            
+            
+            if let activityOwner = activity["createdBy"]?.objectForKey("userImage") as? PFFile {
+                activityOwner.getDataInBackgroundWithBlock({ (data, error: NSError?) -> Void in
+                    if (error != nil) {
+                        print(error)
+                        return
+                    }
+                    
+                    if let newData = data {
+                        self.personImage.image = UIImage(data: newData)                    }
+                })
+                
+            }
+            
+            
         }
     }
     

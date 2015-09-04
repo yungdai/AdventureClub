@@ -49,33 +49,30 @@ class ActivitiesTableViewController: UITableViewController {
         refreshControl.addTarget(self, action: ("refreshPage"), forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = refreshControl
         
-        if let query: PFQuery = PFQuery(className: "Activity") {
-            query.whereKey("creator", equalTo: PFUser.currentUser()!.username!)
-            
-            // getting the data asynchronously in the background
-            query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
-                if let activities = result as? [PFObject] {
-                    self.activities = activities
-                    self.tableView.reloadData()
-                }
+        let query = PFQuery(className: "Activity")
+        query.whereKey("creator", equalTo: PFUser.currentUser()!.username!)
+        
+        // getting the data asynchronously in the background
+        query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
+            if let activities = result as? [PFObject] {
+                self.activities = activities
+                self.tableView.reloadData()
             }
         }
+
     }
     
     func refreshPage() {
-        if let query: PFQuery = PFQuery(className: "Activity") {
-            query.whereKey("creator", equalTo: PFUser.currentUser()!)
-            
-            // getting the data asynchronously in the background
-            query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
-                if let activities = result as? [PFObject] {
-                    self.activities = activities
-                    print("found something", terminator: "")
-                }
-            }
-            
-        }
+        let query = PFQuery(className: "Activity")
+        query.whereKey("creator", equalTo: PFUser.currentUser()!)
         
+        // getting the data asynchronously in the background
+        query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
+            if let activities = result as? [PFObject] {
+                self.activities = activities
+                print("found something", terminator: "")
+            }
+        }
         print("got more data", terminator: "")
         tableView.reloadData()
         refreshControl?.endRefreshing()
