@@ -90,7 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     user.saveInBackground()
                 }
             }
-            let revealVC = storyBoard.instantiateViewControllerWithIdentifier("buddyUpTabBarController") as UIViewController
+            let revealVC = storyBoard.instantiateViewControllerWithIdentifier("AdventureClubMain") as UIViewController
             self.window?.rootViewController = revealVC
         } else {
             self.window?.rootViewController = (storyBoard.instantiateInitialViewController() as UIViewController!)

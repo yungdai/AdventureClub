@@ -255,7 +255,6 @@ class NewActivityViewController: UIViewController, UITextFieldDelegate, UIImageP
         // pop up an acdtion sheet
         let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
         
-        
         // select from photo library
         let photoLibrary = UIAlertAction(title: "Photo Library", style: .Default) { (alert: UIAlertAction) -> Void in
             self.imagePicker.delegate = self

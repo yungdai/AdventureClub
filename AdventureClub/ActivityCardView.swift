@@ -26,7 +26,6 @@ import UIKit
     }
     
     @IBInspectable var StartColor: UIColor = UIColor.whiteColor()
-    
     @IBInspectable var EndColor: UIColor = UIColor.blackColor()
     
     
