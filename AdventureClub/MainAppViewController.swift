@@ -29,7 +29,9 @@ class MainAppViewController: UIViewController{
     var activities: [PFObject]?
     var currentUserID: String?
     
-    // like boolean
+    // Bar button items
+    var signInButtonIsVisible: Bool = true
+    var signInButton: UIBarButtonItem!
 
     
     // location setup
@@ -79,42 +81,57 @@ class MainAppViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // some setup 
-        // get the current location and sent to Parse
-        PFGeoPoint.geoPointForCurrentLocationInBackground { (geoPoint:PFGeoPoint?, error:NSError?) -> Void in if let user = PFUser.currentUser() {
-            if (error != nil) {
-                
-            }
-            self.currentLocation = geoPoint
-            if let currentLocation = self.currentLocation {
-                
-            }
-                        user["currentLocation"] = geoPoint
-                        user.saveInBackground()
-            }
-            
-        }
+        self.frame = CGRectZero
 
-        frame = CGRectZero
-        
-        // get all Activity Objects that aren't yours
-        let query = PFQuery(className: "Activity")
-        query.includeKey("createdBy")
-        query.whereKey("createdBy", notEqualTo: PFUser.currentUser()!)
-        
-        
-        // getting the data asynchronusly in the background
-        query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
+        if PFUser.currentUser()?.sessionToken != nil {
             
-            if (error != nil) {
+            // some setup
+            // get the current location and sent to Parse
+            PFGeoPoint.geoPointForCurrentLocationInBackground { (geoPoint:PFGeoPoint?, error:NSError?) -> Void in if let user = PFUser.currentUser() {
+                if (error != nil) {
+                    
+                }
+                self.currentLocation = geoPoint
+                if let currentLocation = self.currentLocation {
+                    
+                }
+                user["currentLocation"] = geoPoint
+                user.saveInBackground()
+                }
+                // get all Activity Objects that aren't yours
+                let query = PFQuery(className: "Activity")
+                query.includeKey("createdBy")
+                query.whereKey("createdBy", notEqualTo: PFUser.currentUser()!)
                 
+                
+                // getting the data asynchronusly in the background
+                query.findObjectsInBackgroundWithBlock { (result: [AnyObject]?, error: NSError?) -> Void in
+                    
+                    if (error != nil) {
+                        
+                    }
+                    
+                    if let fetchedActivities = result as? [PFObject] {
+                        self.activities = fetchedActivities
+                        //                self.styleForNextActivity()
+                    }
+                }
+
             }
             
-            if let fetchedActivities = result as? [PFObject] {
-                self.activities = fetchedActivities
-                self.styleForNextActivity()
-            }
+            
+        } else {
+            signInButton = UIBarButtonItem(title: "Sign In", style: UIBarButtonItemStyle.Plain, target: self, action: "login")
+            navigationItem.leftBarButtonItem = signInButton
         }
+    }
+    
+    func login() {
+        
+        // Display sign in / up view controller
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = storyboard.instantiateViewControllerWithIdentifier("Login")
+        self.presentViewController(loginViewController, animated: true, completion: nil)
         
     }
     

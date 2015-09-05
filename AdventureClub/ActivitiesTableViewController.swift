@@ -38,8 +38,6 @@ class ActivitiesTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
         }
-        
-        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -104,12 +102,10 @@ class ActivitiesTableViewController: UITableViewController {
         // make sure that when you select the cell it doesn't have a style
         cell.selectionStyle = .None
         
-        
         if let activityCell = cell as? ActivityTableViewCell {
             let dateFormat = NSDateFormatter()
             dateFormat.dateStyle = NSDateFormatterStyle.MediumStyle
             dateFormat.timeStyle = NSDateFormatterStyle.ShortStyle
-
 
             let activity = self.activities[indexPath.row]
             
@@ -155,5 +151,4 @@ class ActivitiesTableViewController: UITableViewController {
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
         }
     }
-    
 }
