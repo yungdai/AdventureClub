@@ -15,10 +15,13 @@ class NewActivityViewController: UIViewController, UITextFieldDelegate, UIImageP
     var activityPickerPopUp : PickerViewPickerPopUp?
     var customImageChosen = false
     var customImageFileName = ""
+    
+    @IBOutlet weak var activityImageView: PictureImageView!
+    
 
-    @IBOutlet var activityImageView: PictureImageView!
-    @IBOutlet weak var newActivityImage: PictureImageView!
-    @IBOutlet weak var activityTypeSelected: TextFieldStyle!
+//    @IBOutlet var activityImageView: PictureImageView!
+//    @IBOutlet weak var newActivityImage: PictureImageView!
+//    @IBOutlet weak var activityTypeSelected: TextFieldStyle!
     
     enum ActivityPicture {
         case WatchTV
@@ -35,10 +38,10 @@ class NewActivityViewController: UIViewController, UITextFieldDelegate, UIImageP
     
     // image picker variables
     let imagePicker = UIImagePickerController()
-    @IBOutlet var addPictureButton: UIButton!
-    @IBOutlet var startTimeTextField: UITextField!
-    @IBOutlet var endTimeTextField: UITextField!
-    @IBOutlet var activityTypeTextField: UITextField!
+    @IBOutlet weak var addPictureButton: UIButton!
+    @IBOutlet weak var startTimeTextField: UITextField!
+    @IBOutlet weak var endTimeTextField: UITextField!
+    @IBOutlet weak var activityTypeTextField: UITextField!
     var currentUser = PFUser.currentUser()
 
     
@@ -57,20 +60,20 @@ class NewActivityViewController: UIViewController, UITextFieldDelegate, UIImageP
         
         switch activityPicture {
         case .WatchTV:
-            newActivityImage.image = UIImage(named: "watchTV")
+            activityImageView.image = UIImage(named: "watchTV")
         case .GoFoDrinks:
-            newActivityImage.image = UIImage(named: "beer-mug-hi")
+            activityImageView.image = UIImage(named: "beer-mug-hi")
         case .PlaySports:
-            newActivityImage.image = UIImage(named: "Soccer_Ball")
+            activityImageView.image = UIImage(named: "Soccer_Ball")
         case .WatchAMovie:
-            newActivityImage.image = UIImage(named: "filmReel")
+            activityImageView.image = UIImage(named: "filmReel")
         case .GoToAnEvent:
-            newActivityImage.image = UIImage(named: "eventIcon")
+            activityImageView.image = UIImage(named: "eventIcon")
         case .GoForAMeal:
             // no image for the meal yet
-            newActivityImage.image = UIImage(named: "noImage")
+            activityImageView.image = UIImage(named: "noImage")
         default:
-            newActivityImage.image = UIImage(named: "noImage")
+            activityImageView.image = UIImage(named: "noImage")
             
         }
     }

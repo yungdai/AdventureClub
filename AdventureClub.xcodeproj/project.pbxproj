@@ -185,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				1A0BD5D31B925C6900B61C07 /* AdventureClub */,
-				1A0BD64A1B92648B00B61C07 /* ViewControllers */,
 				1A0BD5E81B925C6A00B61C07 /* AdventureClubTests */,
 				1A0BD5F31B925C6A00B61C07 /* AdventureClubUITests */,
 				1A0BD5D21B925C6900B61C07 /* Products */,
@@ -207,6 +206,7 @@
 			children = (
 				1A0BD6431B925D6200B61C07 /* Frameworks */,
 				1A0BD6441B9262D800B61C07 /* Models */,
+				1A0BD64A1B92648B00B61C07 /* ViewControllers */,
 				1A0BD5D41B925C6A00B61C07 /* AppDelegate.swift */,
 				1A0BD5D61B925C6A00B61C07 /* ViewController.swift */,
 				1A5709441B929AD700755EDF /* AdventureClub-Bridging-Header.h */,
@@ -323,7 +323,6 @@
 				1A0BD64B1B92649D00B61C07 /* Main App */,
 			);
 			name = ViewControllers;
-			path = AdventureClub;
 			sourceTree = "<group>";
 		};
 		1A0BD64B1B92649D00B61C07 /* Main App */ = {
