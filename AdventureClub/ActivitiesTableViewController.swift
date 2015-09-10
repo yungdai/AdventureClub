@@ -109,7 +109,7 @@ class ActivitiesTableViewController: UITableViewController {
 
             let activity = self.activities[indexPath.row]
             
-            if let type = activity["activityType"] as? String{
+            if let type = activity["activityType"] as? String {
                 activityCell.activityTypeLabel.text = type
             }
             
